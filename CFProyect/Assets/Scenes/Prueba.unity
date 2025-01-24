@@ -1565,10 +1565,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 1350465311020693556, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 1422290649211811271, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
       propertyPath: cam
       value: 
@@ -1577,6 +1573,22 @@ PrefabInstance:
       propertyPath: bulletPool
       value: 
       objectReference: {fileID: 538644677}
+    - target: {fileID: 3538629103398567007, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
+      propertyPath: shootRate
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3538629103398567007, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
+      propertyPath: bulletPool
+      value: 
+      objectReference: {fileID: 538644677}
+    - target: {fileID: 4849887811550528878, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
+      propertyPath: shotgunLifetime
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4849887811550528878, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
+      propertyPath: continuousLifetime
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 7193954122524294236, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.929419

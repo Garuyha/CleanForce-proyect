@@ -35,4 +35,10 @@ public class Bullet : MonoBehaviour
 
         gameObject.SetActive(false);
     }
+
+    public void SetLifetime(float newLifetime)
+    {
+        lifetime = newLifetime;  // Cambia el tiempo de vida
+    }
+    
 }
