@@ -394,6 +394,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 498302409}
     - target: {fileID: 2585468647689193212, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
+      propertyPath: shootRate
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2585468647689193212, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
       propertyPath: bulletPool
       value: 
       objectReference: {fileID: 1956891438}
@@ -444,6 +448,10 @@ PrefabInstance:
     - target: {fileID: 7193954122524294236, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7919271633806046542, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
+      propertyPath: maxAmmo
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

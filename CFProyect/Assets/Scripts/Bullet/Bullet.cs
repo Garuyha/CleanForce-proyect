@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
     private Coroutine lifetimeCoroutine;
 
     void OnEnable()
-    {
+    {   
         lifetimeCoroutine = StartCoroutine(HandleLifetime());
     }
 

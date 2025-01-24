@@ -34,17 +34,19 @@ public class BubbleShooting : MonoBehaviour
         bullet.transform.position = firePoint.transform.position;
         bullet.SetActive(true);
 
+        
+        float randomScale = Random.Range(0.1f, 0.4f); 
+        bullet.transform.localScale = new Vector3(randomScale, randomScale, 1f);
+
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-
-        // rb.linearVelocity = Vector2.zero;
-
+        rb.linearVelocity = Vector2.zero;
+        
         // Dispersión
         float randomAngle = Random.Range(-spreadAmount, spreadAmount);  // Ángulo aleatorio para dispersión
         Vector3 direction = firePoint.up;  // Dirección original
         direction = Quaternion.Euler(0, 0, randomAngle) * direction;  // Rotación
 
-        // Aplicar la fuerza con la dirección dispersada
-        rb.AddForce(direction * bulletForce, ForceMode2D.Impulse);  // Aplica la fuerza
+        rb.AddForce(direction.normalized * bulletForce, ForceMode2D.Impulse);  // Aplica la fuerza
         }
     }
 
