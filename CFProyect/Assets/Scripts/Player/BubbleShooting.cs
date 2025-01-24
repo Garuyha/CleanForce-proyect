@@ -1,50 +1,56 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class BubbleShooter : MonoBehaviour
+public class BubbleShooting : MonoBehaviour
 {
-    public Transform firePoint; // Punto desde donde se disparan las burbujas
-    public GameObject bubblePrefab; // Prefab de las burbujas
-    public float bubbleForce = 20f; // Fuerza aplicada a las burbujas
-    public float fireRate = 0.1f; // Tiempo entre burbujas (velocidad del chorro)
-    public float bubbleLifetime = 2f; // Tiempo antes de que las burbujas se destruyan
-    public float spreadAmount = 0.1f; // Rango de dispersión en el disparo
+    public Transform firePoint;  // El punto de disparo
+    public ObjectPooler bulletPool; //La pool de proyectiles
+    public float shootRate = 0.1f;  // La tasa de disparo, menor valor = mayor cadencia
+    public float bulletForce = 20f;  // La fuerza con la que se dispara el proyectil
+    public float spreadAmount = 5f;  // Cantidad de dispersión (grados)
+    private float nextShootTime = 0f;  // Para controlar el tiempo entre disparos
 
-    private AmmoController ammoController; // Referencia al controlador de munición
-    private float nextFireTime = 0f; // Tiempo para controlar el disparo continuo
-
-    void Start()
-    {
-        // Obtener la referencia al AmmoController
-        ammoController = GetComponent<AmmoController>();
-    }
 
     void Update()
     {
-        // Mantener el disparo constante mientras se mantiene el botón de disparo
-        if (Input.GetButton("Fire1") && Time.time >= nextFireTime && ammoController.GetCurrentAmmo() > 0)
+        if (Input.GetButton("Fire1"))  
         {
-            nextFireTime = Time.time + fireRate; // Control de la tasa de disparo
-            if (ammoController.UseAmmo(1)) // Gastar 1 de munición por disparo
+            if (Time.time >= nextShootTime)
             {
-                ShootBubble();
+                Shoot();
+                nextShootTime = Time.time + shootRate;  // Ajusta el tiempo para el siguiente disparo
             }
         }
     }
 
-    void ShootBubble()
+
+   void Shoot()
     {
-        // Crear una pequeña variación en el punto de disparo
-        Vector3 spreadOffset = new Vector3(Random.Range(-spreadAmount, spreadAmount), Random.Range(-spreadAmount, spreadAmount), 0);
-        Vector3 spawnPosition = firePoint.position + spreadOffset;
+    if(AmmoController.Instance.UseAmmo(1)) // Gasta 1 unidad de munición por disparo
+        { 
+    
+        GameObject bullet = bulletPool.GetPoolObject();  
+        bullet.transform.position = firePoint.transform.position;
+        bullet.SetActive(true);
 
-        // Crear una burbuja en el punto con variación
-        GameObject bubble = Instantiate(bubblePrefab, spawnPosition, firePoint.rotation);
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
 
-        // Aplicar fuerza a la burbuja para que se mueva hacia adelante
-        Rigidbody2D rb = bubble.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint.up * bubbleForce, ForceMode2D.Impulse);
+        // rb.linearVelocity = Vector2.zero;
 
-        // Destruir la burbuja automáticamente después del tiempo definido
-        Destroy(bubble, bubbleLifetime);
+        // Dispersión
+        float randomAngle = Random.Range(-spreadAmount, spreadAmount);  // Ángulo aleatorio para dispersión
+        Vector3 direction = firePoint.up;  // Dirección original
+        direction = Quaternion.Euler(0, 0, randomAngle) * direction;  // Rotación
+
+        // Aplicar la fuerza con la dirección dispersada
+        rb.AddForce(direction * bulletForce, ForceMode2D.Impulse);  // Aplica la fuerza
+        }
     }
+
 }
+    
+
+
+
+
