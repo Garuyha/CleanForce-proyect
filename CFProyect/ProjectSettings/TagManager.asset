@@ -4,7 +4,9 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Obstacle
+  - Negro
+  - Blanco
+  - Piso
   layers:
   - Default
   - TransparentFX
@@ -12,11 +14,11 @@ TagManager:
   - 
   - Water
   - UI
-  - Bullet
   - 
   - 
   - 
-  - Player
+  - 
+  - 
   - 
   - 
   - 
