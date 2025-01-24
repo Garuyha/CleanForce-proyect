@@ -26,7 +26,7 @@ public class Bullet : MonoBehaviour
 
    private void OnCollisionEnter2D (Collision2D collision)  
    {
-    gameObject.SetActive(false);
+        gameObject.SetActive(false);
    }
 
    private IEnumerator HandleLifetime() //Espera el tiempo de vida y desactiva el proyectil si no colisiona con nada
