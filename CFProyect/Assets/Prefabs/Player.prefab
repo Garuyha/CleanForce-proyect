@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7919271633806046542}
   m_Layer: 10
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -185,10 +185,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 3545214999678557551}
-  bubblePrefab: {fileID: 5769965566802305199, guid: 90fd883fe1e90c440b72d6d7ba112bd7, type: 3}
-  bubbleForce: 20
-  fireRate: 0.05
-  bubbleLifetime: 0.5
+  bulletPool: {fileID: 0}
+  shootRate: 0.1
+  bulletForce: 20
   spreadAmount: 0.2
 --- !u!114 &7919271633806046542
 MonoBehaviour:
