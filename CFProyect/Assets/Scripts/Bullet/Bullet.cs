@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -8,6 +7,7 @@ public class Bullet : MonoBehaviour
     private Coroutine lifetimeCoroutine;
     private Rigidbody2D rb;
 
+    public int damage = 20; 
 
     void Awake()
     {
@@ -28,18 +28,31 @@ public class Bullet : MonoBehaviour
         }
     }
 
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
+       
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+            if (enemyHealth != null)
+            {
+                enemyHealth.TakeDamage(damage);  
+            }
+        }
+
+        
         gameObject.SetActive(false);
     }
 
+    
     private IEnumerator HandleLifetime()
     {
         yield return new WaitForSeconds(lifetime);
         gameObject.SetActive(false);
     }
 
-    // Método para actualizar el tiempo de vida de las balas
+    
     public void SetLinearDamping(float newLinearDamping)
     {
         rb.linearDamping = newLinearDamping;
