@@ -1,40 +1,56 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ShotgunShooting : MonoBehaviour
 {
-    public Transform[] firePoints;  // Array de puntos de disparo
-    public ObjectPooler bulletPool;  // Pool de balas
-    public float bulletForce = 20f;  // Fuerza con la que se dispara el proyectil
-    public float shotgunSpreadAmount = 10f;  // Cantidad de dispersión (en grados)
-    public float shootRate = 0.1f;  // Tasa de disparo
-    private float nextShootTime = 0f;  // Para controlar el tiempo entre disparos
+    public List<Transform> firePoints; // Lista de puntos de disparo configurados manualmente
+    public ObjectPooler bulletPool; // Pool de proyectiles
+    public float shootRate = 0.2f; // Tasa de disparo
+    public float bulletForce = 20f; // Fuerza de los proyectiles
+    public float spreadAmount = 15f; // Cantidad de dispersión (grados alrededor del FirePoint)
+    public int ammoPerShot = 1; // Munición consumida por disparo
+
+    private float nextShootTime = 0f; // Control del tiempo entre disparos
 
     void Update()
     {
-        if (Time.time >= nextShootTime && Input.GetButton("Fire1"))  // Mientras se mantenga presionado
+        if (Input.GetButton("Fire1")) // Mientras se mantenga presionado
         {
-            Shoot();
-            nextShootTime = Time.time + shootRate;  // Ajusta el tiempo para el siguiente disparo
+            if (Time.time >= nextShootTime)
+            {
+                Shoot();
+                nextShootTime = Time.time + shootRate; // Ajusta el tiempo para el siguiente disparo
+            }
         }
     }
 
     void Shoot()
     {
-        foreach (Transform firePoint in firePoints)  // Recorrer todos los puntos de disparo
+        // Verificar si hay suficiente munición para disparar
+        if (!AmmoController.Instance.UseAmmo(ammoPerShot))
         {
-            GameObject bullet = bulletPool.GetPoolObject();  // Obtener un proyectil de la pool
-            bullet.transform.position = firePoint.position;
-            bullet.SetActive(true);
+            return; // Si no hay suficiente munición, no disparamos
+        }
 
-            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        foreach (Transform firePoint in firePoints)
+        {
+            GameObject bullet = bulletPool.GetPoolObject(); // Obtener una bala de la pool
+            if (bullet != null) // Verificar que la pool devuelve un objeto
+            {
+                bullet.transform.position = firePoint.position; // Posicionar la bala en el FirePoint
+                bullet.transform.rotation = firePoint.rotation; // Rotación inicial basada en el FirePoint
+                bullet.SetActive(true);
 
-            // Aplicar dispersión
-            float randomAngle = Random.Range(-shotgunSpreadAmount, shotgunSpreadAmount);  // Ángulo aleatorio para dispersión
-            Vector3 direction = firePoint.up;  // Dirección original del firePoint
-            direction = Quaternion.Euler(0, 0, randomAngle) * direction;  // Rotar la dirección por el ángulo aleatorio
+                Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
 
-            // Aplicar la fuerza con la dirección dispersada
-            rb.AddForce(direction * bulletForce, ForceMode2D.Impulse);  // Aplica la fuerza
+                // Añadir dispersión al disparo
+                float randomAngle = Random.Range(-spreadAmount, spreadAmount); // Generar dispersión aleatoria
+                Vector3 direction = Quaternion.Euler(0, 0, randomAngle) * firePoint.up; // Rotar la dirección inicial
+
+                // Aplicar fuerza al proyectil
+                rb.linearVelocity = Vector2.zero; // Reiniciar la velocidad residual
+                rb.AddForce(direction * bulletForce, ForceMode2D.Impulse); // Disparar la bala
+            }
         }
     }
 }
