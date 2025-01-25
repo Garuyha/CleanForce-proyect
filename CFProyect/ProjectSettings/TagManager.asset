@@ -54,5 +54,8 @@ TagManager:
   - name: Objetos
     uniqueID: 3397310701
     locked: 0
+  - name: Player
+    uniqueID: 1293526453
+    locked: 0
   m_RenderingLayers:
   - Default
