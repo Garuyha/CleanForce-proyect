@@ -2,28 +2,32 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
     public float moveSpeed = 5f;
-    
     public Rigidbody2D rb;
-
     public Camera cam;
 
-    Vector2 movement;
-    Vector2 mousePos;
+    private Vector2 movement;
+    private Vector2 mousePos;
+
     void Update()
     {
+        // Leer entrada del teclado
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
+        // Leer la posición del mouse en coordenadas del mundo
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
     }
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-        Vector2 lookDir = mousePos - rb.position; 
+        // Movimiento
+        Vector2 targetPosition = rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime;
+        rb.MovePosition(targetPosition);
+
+        // Rotación
+        Vector2 lookDir = mousePos - rb.position;
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
-        rb.rotation = angle;
+        rb.MoveRotation(angle); // Usar MoveRotation en lugar de ajustar la rotación directamente
     }
 }

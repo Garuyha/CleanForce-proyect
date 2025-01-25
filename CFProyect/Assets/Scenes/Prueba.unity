@@ -1569,6 +1569,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 87419781}
+    - target: {fileID: 1660769449840133410, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2585468647689193212, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
       propertyPath: bulletPool
       value: 
@@ -3924,6 +3928,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 915895376}
+    - target: {fileID: 2016660006532547239, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2016660006532547239, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
       propertyPath: maxDistance
       value: 3
