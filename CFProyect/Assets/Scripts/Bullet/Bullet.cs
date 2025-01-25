@@ -5,11 +5,17 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float lifetime = 5f;
-    private float timeAlive;
     private Coroutine lifetimeCoroutine;
+    private Rigidbody2D rb;
+
+
+    void Awake()
+    {
+        rb = gameObject.GetComponent<Rigidbody2D>();
+    }
 
     void OnEnable()
-    {   
+    {
         lifetimeCoroutine = StartCoroutine(HandleLifetime());
     }
 
@@ -21,18 +27,21 @@ public class Bullet : MonoBehaviour
             lifetimeCoroutine = null;
         }
     }
-    
 
-
-   private void OnCollisionEnter2D (Collision2D collision)  
-   {
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
         gameObject.SetActive(false);
-   }
+    }
 
-   private IEnumerator HandleLifetime() //Espera el tiempo de vida y desactiva el proyectil si no colisiona con nada
+    private IEnumerator HandleLifetime()
     {
         yield return new WaitForSeconds(lifetime);
-
         gameObject.SetActive(false);
+    }
+
+    // Método para actualizar el tiempo de vida de las balas
+    public void SetLinearDamping(float newLinearDamping)
+    {
+        rb.linearDamping = newLinearDamping;
     }
 }
