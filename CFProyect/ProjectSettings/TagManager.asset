@@ -45,5 +45,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Suelo
+    uniqueID: 2870000781
+    locked: 0
+  - name: Paredes
+    uniqueID: 1560503421
+    locked: 0
+  - name: Objetos
+    uniqueID: 3397310701
+    locked: 0
   m_RenderingLayers:
   - Default
