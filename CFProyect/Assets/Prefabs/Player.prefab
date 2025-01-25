@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6437429514838383080}
   m_Layer: 10
-  m_Name: FirePoint (3)
+  m_Name: FirePointL1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,8 +72,10 @@ Transform:
   - {fileID: 3545214999678557551}
   - {fileID: 4537842555771991238}
   - {fileID: 7365886072431958196}
+  - {fileID: 6188027922863004261}
   - {fileID: 6437429514838383080}
   - {fileID: 5653924724979065032}
+  - {fileID: 6025402844120107481}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5293335848865023466
@@ -255,9 +257,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   continuousShooting: {fileID: 2585468647689193212}
   shotgunShooting: {fileID: 3538629103398567007}
+  bulletPool: {fileID: 0}
   continuousLifetime: 5
   shotgunLifetime: 2
-  continuousShotgunSpread: 10
 --- !u!114 &3538629103398567007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,7 +292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5653924724979065032}
   m_Layer: 10
-  m_Name: FirePoint (4)
+  m_Name: FirePointL2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -304,13 +306,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2711448439480236654}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.13052616, w: 0.9914449}
+  m_LocalRotation: {x: 0, y: 0, z: 0.17364816, w: 0.9848078}
   m_LocalPosition: {x: -0.2, y: 0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7193954122524294236}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 15}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 20}
 --- !u!1 &2824881584324316356
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +410,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4537842555771991238}
   m_Layer: 10
-  m_Name: FirePoint (1)
+  m_Name: FirePointR1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -429,6 +431,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7193954122524294236}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -10}
+--- !u!1 &3830678742325023592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6025402844120107481}
+  m_Layer: 10
+  m_Name: FirePointL3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6025402844120107481
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3830678742325023592}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
+  m_LocalPosition: {x: -0.2, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7193954122524294236}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
 --- !u!1 &5802900806268314545
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,7 +472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7365886072431958196}
   m_Layer: 10
-  m_Name: FirePoint (2)
+  m_Name: FirePointR2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -453,13 +486,44 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5802900806268314545}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.13052624, w: 0.9914449}
+  m_LocalRotation: {x: 0, y: 0, z: -0.17364825, w: 0.9848078}
   m_LocalPosition: {x: 0.2, y: 0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7193954122524294236}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -20}
+--- !u!1 &7500095905985723484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6188027922863004261}
+  m_Layer: 10
+  m_Name: FirePointR3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6188027922863004261
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7500095905985723484}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.258819, w: 0.9659259}
+  m_LocalPosition: {x: 0.2, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7193954122524294236}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30}
 --- !u!1 &7813634285284604652
 GameObject:
   m_ObjectHideFlags: 0
