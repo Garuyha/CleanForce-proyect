@@ -76,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 6820053837784048239, guid: 5ff2eb87589b5644f96633c756e82098, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -203,11 +203,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 765742cce85f5f749903af9eac1433f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 5330463553729987926}
-  puntosPatrulla: []
-  i: 0
-  Wait: 0
-  agent: {fileID: 0}
 --- !u!114 &5539433210647790366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,6 +215,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b7504943921274c94cc563cdfeb0fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  spriteRenderer: {fileID: 2861092236515481471}
-  movementScript: {fileID: 758144004388382722}

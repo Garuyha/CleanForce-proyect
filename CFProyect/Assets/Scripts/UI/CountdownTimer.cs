@@ -11,7 +11,6 @@ public class CountdownTimer : MonoBehaviour
 
     void Start()
     {
-        
         overlayPanel.SetActive(true);
         Time.timeScale = 0f; 
         StartCoroutine(StartCountdown());
@@ -31,6 +30,7 @@ public class CountdownTimer : MonoBehaviour
         countdownText.text = "¡GO!"; 
         yield return new WaitForSecondsRealtime(1f); 
         overlayPanel.SetActive(false);
+        countdownText.text = "";
         Time.timeScale = 1f; 
         countdownActive = false;
     }
