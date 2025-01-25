@@ -15,9 +15,9 @@ public class Movimiento : MonoBehaviour
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        target = puntosPatrulla[i].transform;
         agent.updateRotation = false;
         agent.updateUpAxis = false;
-        target = puntosPatrulla[i].transform;
     }
     private void Update()
     {
