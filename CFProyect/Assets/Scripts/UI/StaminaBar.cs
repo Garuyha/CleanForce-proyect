@@ -23,7 +23,7 @@ public class StaminaBar : MonoBehaviour
         }
         else
         {
-        staminaSlider.fillRect.GetComponent<Image>().color = new Color32(93, 217, 81, 255);
+        staminaSlider.fillRect.GetComponent<Image>().color = new Color32(153, 229, 80, 255);
         }
     }
 }
