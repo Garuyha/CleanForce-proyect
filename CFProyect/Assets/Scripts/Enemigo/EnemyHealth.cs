@@ -37,8 +37,8 @@ public class EnemyHealth : MonoBehaviour
         
         if (movementScript != null)
         {
-            movementScript.target = movementScript.agent.transform; 
-            movementScript.agent.SetDestination(movementScript.target.position);
+           // movementScript.target = movementScript.agent.transform; 
+            //movementScript.agent.SetDestination(movementScript.target.position);
             movementScript.enabled = false;
             Debug.Log("No se mueve mas");
         }

@@ -1,9 +1,11 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SpawnMugre : MonoBehaviour
 {
-    void CrearMugre(GameObject mugre, Vector3 posicion)
+    public void Crear(GameObject mugre, Transform posicion)
     {
-        Instantiate(mugre, posicion, Quaternion.identity);
+        Vector3 vectorPosicion = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        Instantiate(mugre, vectorPosicion, Quaternion.identity);
     }
 }
