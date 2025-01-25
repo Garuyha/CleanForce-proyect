@@ -119,6 +119,45 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &13776167 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1372043711588413295, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+  m_PrefabInstance: {fileID: 5657135996543282776}
+  m_PrefabAsset: {fileID: 0}
+--- !u!195 &13776170 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 257488447228661418, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+  m_PrefabInstance: {fileID: 5657135996543282776}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &13776173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13776167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 765742cce85f5f749903af9eac1433f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  puntosPatrulla:
+  - {fileID: 213381005}
+  - {fileID: 2145598312}
+  - {fileID: 631001783}
+  - {fileID: 819522948}
+  - {fileID: 1037093158}
+  - {fileID: 1583388843}
+  - {fileID: 194234455}
+  - {fileID: 238057147}
+  - {fileID: 756664667}
+  - {fileID: 416923642}
+  - {fileID: 2041545012}
+  - {fileID: 1246570740}
+  - {fileID: 401883193}
+  i: 0
+  Wait: 0
 --- !u!20 &87419781 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 817478454728009587, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
@@ -580,6 +619,11 @@ PrefabInstance:
 --- !u!1 &213381005 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1852385956852824027, guid: f8f9b44992c21dd448192a9ebc1e30e0, type: 3}
+  m_PrefabInstance: {fileID: 213381004}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &213381009 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7506306100375241620, guid: f8f9b44992c21dd448192a9ebc1e30e0, type: 3}
   m_PrefabInstance: {fileID: 213381004}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &238057146
@@ -4830,6 +4874,70 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4824469191408346682, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+      propertyPath: agent
+      value: 
+      objectReference: {fileID: 13776170}
+    - target: {fileID: 4824469191408346682, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 213381009}
+    - target: {fileID: 4824469191408346682, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+      propertyPath: puntosPatrulla.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824469191408346682, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+      propertyPath: 'puntosPatrulla.Array.data[0]'
+      value: 
+      objectReference: {fileID: 213381005}
+    - target: {fileID: 4824469191408346682, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+      propertyPath: 'puntosPatrulla.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2145598312}
+    - target: {fileID: 4824469191408346682, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+      propertyPath: 'puntosPatrulla.Array.data[2]'
+      value: 
+      objectReference: {fileID: 631001783}
+    - target: {fileID: 4824469191408346682, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+      propertyPath: 'puntosPatrulla.Array.data[3]'
+      value: 
+      objectReference: {fileID: 819522948}
+    - target: {fileID: 4824469191408346682, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+      propertyPath: 'puntosPatrulla.Array.data[4]'
+      value: 
+      objectReference: {fileID: 1037093158}
+    - target: {fileID: 4824469191408346682, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+      propertyPath: 'puntosPatrulla.Array.data[5]'
+      value: 
+      objectReference: {fileID: 1583388843}
+    - target: {fileID: 4824469191408346682, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+      propertyPath: 'puntosPatrulla.Array.data[6]'
+      value: 
+      objectReference: {fileID: 194234455}
+    - target: {fileID: 4824469191408346682, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+      propertyPath: 'puntosPatrulla.Array.data[7]'
+      value: 
+      objectReference: {fileID: 238057147}
+    - target: {fileID: 4824469191408346682, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+      propertyPath: 'puntosPatrulla.Array.data[8]'
+      value: 
+      objectReference: {fileID: 756664667}
+    - target: {fileID: 4824469191408346682, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+      propertyPath: 'puntosPatrulla.Array.data[9]'
+      value: 
+      objectReference: {fileID: 416923642}
+    - target: {fileID: 4824469191408346682, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+      propertyPath: 'puntosPatrulla.Array.data[10]'
+      value: 
+      objectReference: {fileID: 2041545012}
+    - target: {fileID: 4824469191408346682, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+      propertyPath: 'puntosPatrulla.Array.data[11]'
+      value: 
+      objectReference: {fileID: 1246570740}
+    - target: {fileID: 4824469191408346682, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+      propertyPath: 'puntosPatrulla.Array.data[12]'
+      value: 
+      objectReference: {fileID: 401883193}
     - target: {fileID: 8251154152426622360, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
       propertyPath: 'puntosPatrulla.Array.data[0]'
       value: 
@@ -4882,10 +4990,14 @@ PrefabInstance:
       propertyPath: 'puntosPatrulla.Array.data[12]'
       value: 
       objectReference: {fileID: 401883193}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4824469191408346682, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1372043711588413295, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 13776173}
   m_SourcePrefab: {fileID: 100100000, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

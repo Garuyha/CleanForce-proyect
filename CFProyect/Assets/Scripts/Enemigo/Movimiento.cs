@@ -1,29 +1,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using static UnityEngine.GraphicsBuffer;
 
-public class ExampleClass : MonoBehaviour
+public class Movimiento : MonoBehaviour
 {
     //nuevoCuadrado = Instantiate(cuadradoNegro, transform.position, Quaternion.identity);
-    [SerializeField] Transform target;
-    [SerializeField] GameObject[] puntosPatrulla;
+    [SerializeField] private Transform target;
+    [SerializeField] private GameObject[] puntosPatrulla;
     [SerializeField] private int i = 0;
-    [SerializeField] private float Wait=0;
-    NavMeshAgent agent;
+    [SerializeField] private float Wait = 0;
+    private NavMeshAgent agent;
 
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
-        agent.updateUpAxis = false; 
+        agent.updateUpAxis = false;
         target = puntosPatrulla[i].transform;
     }
-
     private void Update()
     {
         agent.SetDestination(target.position);
-        Wait = Wait+1*Time.deltaTime;
-        if(Wait > 10)
+        Wait = Wait + 1 * Time.deltaTime;
+        if (Wait > 10)
         {
             Wait = 0;
             do
