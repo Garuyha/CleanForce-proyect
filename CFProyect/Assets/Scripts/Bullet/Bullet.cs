@@ -34,10 +34,10 @@ public class Bullet : MonoBehaviour
        
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+            EnemigoPadre enemyHealth = collision.gameObject.GetComponent<EnemigoPadre>();
             if (enemyHealth != null)
             {
-                enemyHealth.TakeDamage(damage);  
+                enemyHealth.DealDamage(damage);  
             }
         }
 

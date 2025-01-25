@@ -1581,6 +1581,18 @@ PrefabInstance:
       propertyPath: sprintSpeed
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1422290649211811271, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
+      propertyPath: staminaDrainRate
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1422290649211811271, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
+      propertyPath: staminaRegenRate
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1422290649211811271, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
+      propertyPath: staminaLowThreshold
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 1660769449840133410, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
       propertyPath: m_Interpolate
       value: 1
@@ -2226,8 +2238,9 @@ MonoBehaviour:
   enemigo: {fileID: 1120851092}
   spawn: {fileID: 1120851093}
   movimiento: {fileID: 1120851089}
+  sistemaDmg: {fileID: 1120851095}
   wait: 0
-  target: {fileID: 0}
+  target: {fileID: 1120851092}
   puntosPatrulla:
   - {fileID: 213381005}
   - {fileID: 2145598312}
@@ -2242,9 +2255,26 @@ MonoBehaviour:
   - {fileID: 2041545012}
   - {fileID: 1246570740}
   - {fileID: 401883193}
-  i: 0
-  auxI: 1
-  agent: {fileID: 0}
+  spriteRenderer: {fileID: 1335033788}
+  maxHealth: 100
+  currentHealth: 0
+  agent: {fileID: 1120851097}
+--- !u!114 &1120851095 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5539433210647790366, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+  m_PrefabInstance: {fileID: 5657135996543282776}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120851087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8b7504943921274c94cc563cdfeb0fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!195 &1120851097 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 257488447228661418, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+  m_PrefabInstance: {fileID: 5657135996543282776}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1126830093
 GameObject:
   m_ObjectHideFlags: 0
@@ -3220,6 +3250,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1335033788 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2861092236515481471, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+  m_PrefabInstance: {fileID: 5657135996543282776}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1371058501
 GameObject:
   m_ObjectHideFlags: 0
@@ -5218,6 +5253,14 @@ PrefabInstance:
       propertyPath: ammoController
       value: 
       objectReference: {fileID: 1606120223}
+    - target: {fileID: 4806273973809657889, guid: bd097b2e88577df40838772e585711b0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4806273973809657889, guid: bd097b2e88577df40838772e585711b0, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6124570588053049068, guid: bd097b2e88577df40838772e585711b0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
