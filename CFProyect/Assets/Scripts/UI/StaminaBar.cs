@@ -4,11 +4,11 @@ using UnityEngine.UI;
 public class StaminaBar : MonoBehaviour
 {
     public Slider staminaSlider;  
-    public PlayerMovement playerMovement; 
+    private PlayerMovement playerMovement; 
 
     void Start()
     {
-        
+        playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
         staminaSlider.maxValue = playerMovement.maxStamina;
         staminaSlider.value = playerMovement.stamina;
     }
