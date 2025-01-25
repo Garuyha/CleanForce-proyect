@@ -124,6 +124,87 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 817478454728009587, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
   m_PrefabInstance: {fileID: 1603555298}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &150571855 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1372043711588413295, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+  m_PrefabInstance: {fileID: 5657135996543282776}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &150571856 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5539433210647790366, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+  m_PrefabInstance: {fileID: 5657135996543282776}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150571855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8b7504943921274c94cc563cdfeb0fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &150571857 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 758144004388382722, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+  m_PrefabInstance: {fileID: 5657135996543282776}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150571855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 765742cce85f5f749903af9eac1433f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!195 &150571859 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 257488447228661418, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+  m_PrefabInstance: {fileID: 5657135996543282776}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &150571861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150571855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ad3c42cd4aa6246be830d00cf95858, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &150571862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150571855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50803ae815defb842b22adc56c0abb74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mugre: {fileID: 3092601173440703902, guid: b3fce8cab25a2d545a40acb196ec3b2d, type: 3}
+  enemigo: {fileID: 0}
+  spawn: {fileID: 150571861}
+  movimiento: {fileID: 150571857}
+  sistemaDmg: {fileID: 150571856}
+  wait: 0
+  target: {fileID: 0}
+  puntosPatrulla:
+  - {fileID: 213381005}
+  - {fileID: 2145598312}
+  - {fileID: 631001783}
+  - {fileID: 819522948}
+  - {fileID: 1037093158}
+  - {fileID: 1583388843}
+  - {fileID: 194234455}
+  - {fileID: 238057147}
+  - {fileID: 756664667}
+  - {fileID: 416923642}
+  - {fileID: 2041545012}
+  - {fileID: 1246570740}
+  - {fileID: 401883193}
+  spriteRenderer: {fileID: 234041255}
+  maxHealth: 100
+  currentHealth: 0
+  agent: {fileID: 150571859}
 --- !u!1 &150635976
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,6 +662,11 @@ PrefabInstance:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1852385956852824027, guid: f8f9b44992c21dd448192a9ebc1e30e0, type: 3}
   m_PrefabInstance: {fileID: 213381004}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &234041255 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2861092236515481471, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+  m_PrefabInstance: {fileID: 5657135996543282776}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &238057146
 PrefabInstance:
@@ -5322,7 +5408,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1372043711588413295, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 150571862}
+    - targetCorrespondingSourceObject: {fileID: 1372043711588413295, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 150571861}
   m_SourcePrefab: {fileID: 100100000, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
