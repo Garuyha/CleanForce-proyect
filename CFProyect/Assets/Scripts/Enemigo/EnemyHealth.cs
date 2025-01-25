@@ -11,7 +11,7 @@ public class EnemyHealth : MonoBehaviour
     {
         currentHealth = maxHealth; 
         spriteRenderer = GetComponent<SpriteRenderer>(); 
-        movementScript = GetComponent<ExampleClass>(); 
+        movementScript = GetComponent<Movimiento>(); 
     }
 
     public void TakeDamage(int damage)
