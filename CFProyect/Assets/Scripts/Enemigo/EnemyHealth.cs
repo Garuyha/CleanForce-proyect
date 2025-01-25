@@ -7,8 +7,7 @@ public class EnemyHealth : MonoBehaviour
 
     public int TakeDamage(int damage, int currentHealth)
     {
-        currentHealth -= damage; 
-        Debug.Log("Daño recibido: " + damage + ", salud restante: " + currentHealth);
+        currentHealth -= damage;
         return currentHealth;
     }
 

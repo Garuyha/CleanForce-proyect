@@ -32,7 +32,7 @@ public class EnemigoPadre : MonoBehaviour
         if (wait >= 0.5f)
         {
             wait = 0f;
-            //spawn.Crear(mugre, enemigo);
+            spawn.Crear(mugre, enemigo);
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
