@@ -8,6 +8,7 @@ TagManager:
   - Blanco
   - Piso
   - Obstacle
+  - Enemy
   layers:
   - Default
   - TransparentFX
