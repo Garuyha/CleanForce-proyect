@@ -915,11 +915,6 @@ MonoBehaviour:
   m_Area: 0
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
---- !u!4 &368915751 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6437429514838383080, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
-  m_PrefabInstance: {fileID: 616744119}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &396544645
 GameObject:
   m_ObjectHideFlags: 0
@@ -1579,57 +1574,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 538644677}
     - target: {fileID: 3538629103398567007, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
-      propertyPath: shootRate
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3538629103398567007, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
-      propertyPath: bulletPool
-      value: 
-      objectReference: {fileID: 538644677}
-    - target: {fileID: 3538629103398567007, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
-      propertyPath: ammoPerShot
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 3538629103398567007, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
-      propertyPath: shotgunSpreadAmount
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 3538629103398567007, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
-      propertyPath: firePoints.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 3538629103398567007, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
-      propertyPath: 'firePoints.Array.data[2]'
-      value: 
-      objectReference: {fileID: 368915751}
-    - target: {fileID: 3538629103398567007, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
-      propertyPath: 'firePoints.Array.data[3]'
-      value: 
-      objectReference: {fileID: 1947189627}
-    - target: {fileID: 3538629103398567007, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
-      propertyPath: 'firePoints.Array.data[5]'
-      value: 
-      objectReference: {fileID: 616744121}
-    - target: {fileID: 3538629103398567007, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
-      propertyPath: 'firePoints.Array.data[6]'
-      value: 
-      objectReference: {fileID: 616744120}
-    - target: {fileID: 4849887811550528878, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
       propertyPath: bulletPool
       value: 
       objectReference: {fileID: 538644677}
     - target: {fileID: 4849887811550528878, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
-      propertyPath: shotgunDamping
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4849887811550528878, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
-      propertyPath: shotgunLifetime
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4849887811550528878, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
-      propertyPath: continuousLifetime
-      value: 0.8
-      objectReference: {fileID: 0}
+      propertyPath: bulletPool
+      value: 
+      objectReference: {fileID: 538644677}
     - target: {fileID: 7193954122524294236, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.929419
@@ -1675,16 +1626,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
---- !u!4 &616744120 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6025402844120107481, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
-  m_PrefabInstance: {fileID: 616744119}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &616744121 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6188027922863004261, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
-  m_PrefabInstance: {fileID: 616744119}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &622147939
 GameObject:
   m_ObjectHideFlags: 0
@@ -3975,13 +3916,33 @@ PrefabInstance:
       propertyPath: orthographic size
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 817478454728009587, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2016660006532547239, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 915895376}
+    - target: {fileID: 2016660006532547239, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
+      propertyPath: maxDistance
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5852175344358795707, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 7921603195960649386, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7921603195960649386, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7921603195960649386, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7921603195960649386, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4551,11 +4512,6 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
---- !u!4 &1947189627 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7365886072431958196, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
-  m_PrefabInstance: {fileID: 616744119}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2041545011
 PrefabInstance:
   m_ObjectHideFlags: 0
