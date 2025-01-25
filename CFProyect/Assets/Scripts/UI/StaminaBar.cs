@@ -4,11 +4,11 @@ using UnityEngine.UI;
 public class StaminaBar : MonoBehaviour
 {
     public Slider staminaSlider;  
-    public PlayerMovement playerMovement; 
+    private PlayerMovement playerMovement; 
 
     void Start()
     {
-        
+        playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
         staminaSlider.maxValue = playerMovement.maxStamina;
         staminaSlider.value = playerMovement.stamina;
     }
@@ -23,7 +23,7 @@ public class StaminaBar : MonoBehaviour
         }
         else
         {
-        staminaSlider.fillRect.GetComponent<Image>().color = new Color32(93, 217, 81, 255);
+        staminaSlider.fillRect.GetComponent<Image>().color = new Color32(153, 229, 80, 255);
         }
     }
 }

@@ -7,7 +7,8 @@ public class Bullet : MonoBehaviour
     private Coroutine lifetimeCoroutine;
     private Rigidbody2D rb;
 
-    public int damage = 20; 
+    public int damage = 5;
+    public int dmgMugre = 20;
 
     void Awake()
     {
@@ -34,10 +35,19 @@ public class Bullet : MonoBehaviour
        
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+            EnemigoPadre enemyHealth = collision.gameObject.GetComponent<EnemigoPadre>();
             if (enemyHealth != null)
             {
-                enemyHealth.TakeDamage(damage);  
+                enemyHealth.DealDamage(damage);  
+            }
+        }
+        else if (collision.gameObject.CompareTag("Blanco"))
+        {
+            MugrePadre saludMugre = collision.gameObject.GetComponent<MugrePadre>();
+            if(saludMugre != null)
+            {
+                Debug.Log("A");
+                saludMugre.TakeDmg(dmgMugre);
             }
         }
 
