@@ -1453,6 +1453,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &455934656 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4841842688335292907, guid: 7985a5f1ab79fa54087477dc7c1ae2fb, type: 3}
+  m_PrefabInstance: {fileID: 4454015604024133094}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &482058920
 GameObject:
   m_ObjectHideFlags: 0
@@ -2664,8 +2669,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3b30a5b062564841b993dfb2861d843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countdownText: {fileID: 0}
-  overlayPanel: {fileID: 0}
+  countdownText: {fileID: 1457194352}
+  overlayPanel: {fileID: 455934656}
 --- !u!1 &1188922128
 GameObject:
   m_ObjectHideFlags: 0
@@ -3611,6 +3616,17 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &1457194352 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6149396222106532268, guid: 7985a5f1ab79fa54087477dc7c1ae2fb, type: 3}
+  m_PrefabInstance: {fileID: 4454015604024133094}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1567245738
 GameObject:
   m_ObjectHideFlags: 0
