@@ -1,17 +1,16 @@
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class EnemyHealth : MonoBehaviour
 {
     public int maxHealth = 100; 
     private int currentHealth; 
-    private SpriteRenderer spriteRenderer; 
-    private MonoBehaviour movementScript; 
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Movimiento movementScript; 
 
     void Start()
     {
-        currentHealth = maxHealth; 
-        spriteRenderer = GetComponent<SpriteRenderer>(); 
-        movementScript = GetComponent<Movimiento>(); 
+        currentHealth = maxHealth;
     }
 
     public void TakeDamage(int damage)
@@ -32,13 +31,16 @@ public class EnemyHealth : MonoBehaviour
         
         if (spriteRenderer != null)
         {
-            spriteRenderer.color = Color.blue;
+            spriteRenderer.color = Color.green;
         }
 
         
         if (movementScript != null)
         {
+            movementScript.target = movementScript.agent.transform; 
+            movementScript.agent.SetDestination(movementScript.target.position);
             movementScript.enabled = false;
+            Debug.Log("No se mueve mas");
         }
 
         Collider2D collider = GetComponent<Collider2D>();

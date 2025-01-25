@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 7919271633806046542}
   - component: {fileID: 4849887811550528878}
   - component: {fileID: 3538629103398567007}
-  - component: {fileID: 6419704809102872106}
+  - component: {fileID: 7352815751598569709}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -111,6 +111,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  sprintSpeed: 8
+  tiredSpeed: 2
+  maxStamina: 100
+  stamina: 100
+  staminaDrainRate: 10
+  staminaRegenRate: 5
+  staminaLowThreshold: 30
   rb: {fileID: 1660769449840133410}
   cam: {fileID: 0}
 --- !u!114 &2585468647689193212
@@ -187,8 +194,8 @@ MonoBehaviour:
   bulletForce: 20
   spreadAmount: 15
   ammoPerShot: 7
---- !u!60 &6419704809102872106
-PolygonCollider2D:
+--- !u!61 &7352815751598569709
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -221,7 +228,7 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -231,12 +238,8 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 0.4}
-      - {x: 0.35, y: -0.25}
-      - {x: -0.35, y: -0.25}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 0.35, y: 0.4}
+  m_EdgeRadius: 0
 --- !u!1 &2711448439480236654
 GameObject:
   m_ObjectHideFlags: 0

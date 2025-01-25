@@ -6,11 +6,11 @@ using static UnityEngine.GraphicsBuffer;
 public class Movimiento : MonoBehaviour
 {
     //nuevoCuadrado = Instantiate(cuadradoNegro, transform.position, Quaternion.identity);
-    [SerializeField] private Transform target;
+    [SerializeField] public Transform target;
     [SerializeField] private GameObject[] puntosPatrulla;
     [SerializeField] private int i = 0;
     [SerializeField] private float Wait = 0;
-    private NavMeshAgent agent;
+    public NavMeshAgent agent;
 
     private void Start()
     {
