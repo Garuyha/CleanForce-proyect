@@ -6,6 +6,7 @@ public class EnemigoPadre : MonoBehaviour
     [SerializeField] public GameObject[] puntosPatrulla;
     [SerializeField] public GameObject mugre;
     [SerializeField] public Transform enemigo;
+    [SerializeField] public Animator animaciones;
     [SerializeField] private SpawnMugre spawn;
     [SerializeField] private Movimiento movimiento;
     [SerializeField] private Rotacion rotar;
@@ -21,7 +22,7 @@ public class EnemigoPadre : MonoBehaviour
     [SerializeField] private int maximaMugre;
     public static int mugreActual;
 
-    private void Awake()
+    private void OnEnable()
     {
         agent = GetComponent<NavMeshAgent>();
         target = puntosPatrulla[0].transform;
@@ -41,6 +42,7 @@ public class EnemigoPadre : MonoBehaviour
             wait = wait + 1 * Time.deltaTime;
             if (wait >= 0.5f && mugreActual < maximaMugre)
             {
+                animaciones.SetBool("Daño", false);
                 wait = 0f;
                 mugreActual++;
                 spawn.Crear(mugre, enemigo, vivo);
@@ -58,6 +60,8 @@ public class EnemigoPadre : MonoBehaviour
     public void DealDamage (int damage)
     {
         currentHealth = sistemaDmg.TakeDamage(damage,currentHealth);
+        animaciones.SetBool("Daño", true);
+        animaciones.SetInteger("vida", currentHealth);
         if (currentHealth <= 0)
         {
             Muerte();
@@ -66,8 +70,9 @@ public class EnemigoPadre : MonoBehaviour
     private void Muerte()
     {
         target = sistemaDmg.DieMovment(agent, target);
-        spriteRenderer = sistemaDmg.DieSprite(spriteRenderer);
-        vivo = false;
+        animaciones.SetBool("Daño", false);
+        vivo = false; 
+        gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
     }
     
 }

@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 6429583179072323122}
   - component: {fileID: 7527597509534267058}
   - component: {fileID: 2758158828807301714}
+  - component: {fileID: 6670820300964443653}
   m_Layer: 3
-  m_Name: Mugre (No creada)
+  m_Name: Mugre (no creada)
   m_TagString: MugreBase
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,15 +76,15 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.46226418, g: 0.39466894, b: 0.39466894, a: 1}
+  m_SortingLayerID: -534610207
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -712631045867808456, guid: b670ab75dde984907b8570040daa08c5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.8828125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -127,8 +128,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 0.8828125}
+    newSize: {x: 1, y: 0.8828125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -149,4 +150,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 60
   currentHealth: 0
-  creada: 0
+--- !u!114 &6670820300964443653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3092601173440703902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a4977f32a0383044b7d9b16e30140b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteMugre:
+  - {fileID: -3182066915464231585, guid: 0295ef167cac80e4eafb7d5d57c2127d, type: 3}
+  - {fileID: 4336684858423812787, guid: 9536a2174d4db2544a8884ec30b9dc3a, type: 3}
+  - {fileID: 4624525411494841108, guid: 1628f102c0d52724ab79e717a8de8bfb, type: 3}
+  - {fileID: -88179162535408736, guid: 3ba74f629cbe07a49a8a3cb10fc042f6, type: 3}
+  - {fileID: -7423965633648957212, guid: d2fb9ec949bc7b04482be2742d8c47bd, type: 3}
+  - {fileID: 8070197018541598459, guid: de9fccf6b457a61448870e68a7fb0e1a, type: 3}
+  - {fileID: -2821290278934087387, guid: d3a12fd4c0fe24e4bb3302dee06d7afd, type: 3}
+  - {fileID: 2819627665383588966, guid: 7880db0c63511a64b900c921662a8558, type: 3}
+  - {fileID: 866135367473398285, guid: cc57a50cb40c01449b3128718fcc9c49, type: 3}
+  - {fileID: -6388674408125385570, guid: bffcd7bb0e5c67249bd0f75cd81da38e, type: 3}
+  - {fileID: 9005157550019169438, guid: 37a4472239f00304294436b58f284531, type: 3}
+  - {fileID: 8660355814604318054, guid: 61a51a32804cf5b4596faf45b7d97576, type: 3}
+  - {fileID: -8993102731162262963, guid: 9ab6ff375d2d77e40829ffc995db3c68, type: 3}
+  - {fileID: -3222413901198199011, guid: 52bc45d89a5615f419b3e92ddb1928ed, type: 3}
+  - {fileID: -1959394528802136415, guid: cdce21852147fa34f829ab704076d89a, type: 3}
+  - {fileID: -1959394528802136415, guid: cdce21852147fa34f829ab704076d89a, type: 3}
+  - {fileID: -2881545761435354597, guid: eb95b1db21faf9c4e81f1d235b0d3176, type: 3}
+  - {fileID: 8859893499393508936, guid: a4825337fa9d54842865868ad8ee7feb, type: 3}
+  - {fileID: 6710225449428246709, guid: 31ee80bbfc572324086f768f2149cad0, type: 3}
+  - {fileID: 926268498403150964, guid: fdaa22a606ce8bb42a85268d4e9ebf0d, type: 3}
+  - {fileID: 1157902794874426952, guid: e5d20d040aaf28f4db4ac29474f07664, type: 3}
