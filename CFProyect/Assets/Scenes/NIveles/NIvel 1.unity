@@ -297,6 +297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countdownText: {fileID: 1366079768}
   overlayPanel: {fileID: 1641369734}
+  uiPanel: {fileID: 1141269906}
 --- !u!114 &66781339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8060,11 +8061,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6124570588053049068, guid: bd097b2e88577df40838772e585711b0, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8188888764644933562, guid: bd097b2e88577df40838772e585711b0, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8674944994366385815, guid: bd097b2e88577df40838772e585711b0, type: 3}
       propertyPath: m_Name
@@ -8072,7 +8073,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8674944994366385815, guid: bd097b2e88577df40838772e585711b0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8585,6 +8586,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 102848150865294043, guid: 6968bebd8b23021469b9c923b57ce09c, type: 3}
   m_PrefabInstance: {fileID: 1114845019}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1141269906 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8674944994366385815, guid: bd097b2e88577df40838772e585711b0, type: 3}
+  m_PrefabInstance: {fileID: 1035249512}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1155988166 stripped
 GameObject:
