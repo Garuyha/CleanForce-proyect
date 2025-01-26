@@ -13,10 +13,8 @@ public class GameManager : MonoBehaviour
     private float finalLevelTime = 0f; 
     private bool isLevelActive = false;
 
-    void Start()
+    void OnEnable()
     {
-        GameObject[] objects = GameObject.FindGameObjectsWithTag("MugreBase");
-        nivelMugre = objects.Length;
         levelTime = 0f;
         isLevelActive = true;
     }
