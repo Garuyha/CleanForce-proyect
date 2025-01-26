@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Pruba de movimiento.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
+    path: Assets/Scenes/Cinematica.unity
+    guid: c93d5a72c2255084cb44701a3dc1e63f
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: b0fb0137089b64041bc7bb47c7df54df
   - enabled: 1

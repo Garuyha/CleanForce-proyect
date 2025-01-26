@@ -1,2 +1,20 @@
 fileFormatVersion: 2
 guid: 300ef9f4f1b92af49b59b43e8484be6d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - musicSource: {instanceID: 0}
+  - SFXSource: {instanceID: 0}
+  - background: {fileID: 8300000, guid: 8036131503bb1a94f8353338e7b8fe68, type: 3}
+  - bublesLong: {fileID: 8300000, guid: 9ab441ccee2da8944a115ec0bff99469, type: 3}
+  - bublesShort: {fileID: 8300000, guid: bd16a60cd066c5c4eb5c0a63474e639f, type: 3}
+  - footsChild: {fileID: 8300000, guid: 09c4486522e30a04d8379663eb6b56b5, type: 3}
+  - footsMan: {fileID: 8300000, guid: 471c5494aeea1664bb9789d17e6ae9dd, type: 3}
+  - win: {fileID: 8300000, guid: 3238ae0100807b847805e357aa24cb3d, type: 3}
+  - buttom: {fileID: 8300000, guid: 60c3e23521298eb4a80100c3377597f4, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
