@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2758158828807301714}
   m_Layer: 3
   m_Name: Mugre (No creada)
-  m_TagString: Blanco
+  m_TagString: MugreBase
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

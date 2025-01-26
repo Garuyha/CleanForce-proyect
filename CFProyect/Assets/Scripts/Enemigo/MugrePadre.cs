@@ -4,7 +4,6 @@ public class MugrePadre: MonoBehaviour
 {
     [SerializeField] public int maxHealth = 40;
     [SerializeField] public int currentHealth;
-    [SerializeField] private bool creada=true;
 
     private void Awake()
     {
@@ -16,9 +15,11 @@ public class MugrePadre: MonoBehaviour
         currentHealth -= dmg;
         if (currentHealth <= 0)
         {
-            if(creada)
+            GameManager.nivelMugre--;
+            if(this.gameObject.tag == "Mugre")
                 EnemigoPadre.mugreActual--;
             Destroy(gameObject);
+            Debug.Log("El nivel de mugre actual es: " + GameManager.nivelMugre);
         }
     }
 
