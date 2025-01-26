@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e88e3b436a25bea44b8ec0a10976c48b
+guid: eb52f026c9f91734fbbb7c7a79bc58ea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8288426215254106694
-    second: 8_0
+      213: 6766313634771388885
+    second: patta_pedido_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,23 +113,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 8_0
+      name: patta_pedido_10
       rect:
         serializedVersion: 2
-        x: 2
-        y: 2
-        width: 86
-        height: 56
+        x: 64
+        y: 149
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 642a1439ab7660370800000000000000
-      internalID: 8288426215254106694
+      spriteID: 8179fe6180483c142b39e16f2d56d761
+      internalID: 375177224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patta_pedido_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 21
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe457150a607e1c41834fbe622844e61
+      internalID: -921905530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: patta_pedido_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 21
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdec3bf0ca5cc0e459b87e871128b5db
+      internalID: -2084764353
       vertices: []
       indices: 
       edges: []
@@ -138,7 +182,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 678ded69c6eeb7f4aa3e8fff259ed57a
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +192,24 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      8_0: 8288426215254106694
+      patta_pedido_0: 6766313634771388885
+      patta_pedido_1: 1398358627
+      patta_pedido_10: 375177224
+      patta_pedido_11: 1920582381
+      patta_pedido_12: -253949093
+      patta_pedido_13: -1444651424
+      patta_pedido_14: -836275440
+      patta_pedido_15: -921905530
+      patta_pedido_16: -2084764353
+      patta_pedido_17: -1481191301
+      patta_pedido_2: 73066812
+      patta_pedido_3: -734937885
+      patta_pedido_4: 97222315
+      patta_pedido_5: -1717527973
+      patta_pedido_6: 687938725
+      patta_pedido_7: 382730276
+      patta_pedido_8: -177756186
+      patta_pedido_9: 572245542
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

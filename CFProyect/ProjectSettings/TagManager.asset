@@ -61,5 +61,8 @@ TagManager:
   - name: Enemigo
     uniqueID: 3760357089
     locked: 0
+  - name: Burbuja
+    uniqueID: 2141181503
+    locked: 0
   m_RenderingLayers:
   - Default
