@@ -2192,6 +2192,28 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8674944994366385815, guid: bd097b2e88577df40838772e585711b0, type: 3}
   m_PrefabInstance: {fileID: 420459367}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &420459370 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4300628753387790019, guid: bd097b2e88577df40838772e585711b0, type: 3}
+  m_PrefabInstance: {fileID: 420459367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &420459371 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4611222291462355602, guid: bd097b2e88577df40838772e585711b0, type: 3}
+  m_PrefabInstance: {fileID: 420459367}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &441732284
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8116,7 +8138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1265297958822466075, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
       propertyPath: m_SortingLayer
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1265297958822466075, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
       propertyPath: m_SortingLayerID
@@ -8196,6 +8218,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7193954122524294236, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
   m_PrefabInstance: {fileID: 1455891908}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1455891910 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4849887811550528878, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
+  m_PrefabInstance: {fileID: 1455891908}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 905e34043d760bf499d6dc2cf43acd9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1464323803
 GameObject:
   m_ObjectHideFlags: 0
@@ -9901,6 +9934,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8283866546134850388, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: shotgunIcon
+      value: 
+      objectReference: {fileID: 420459371}
+    - target: {fileID: 8283866546134850388, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: continuousIcon
+      value: 
+      objectReference: {fileID: 420459370}
+    - target: {fileID: 8283866546134850388, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: shootingModeSwitcher
+      value: 
+      objectReference: {fileID: 1455891910}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12068,8 +12113,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 817478454728009587, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 817478454728009587, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
       propertyPath: orthographic size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 817478454728009587, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 817478454728009587, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 817478454728009587, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2016660006532547239, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
       propertyPath: player

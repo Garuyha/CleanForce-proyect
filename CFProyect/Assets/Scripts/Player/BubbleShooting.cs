@@ -10,7 +10,14 @@ public class BubbleShooting : MonoBehaviour
     public float bulletForce = 20f;  // La fuerza con la que se dispara el proyectil
     public float spreadAmount = 5f;  // Cantidad de dispersión (grados)
     private float nextShootTime = 0f;  // Para controlar el tiempo entre disparos
+    public AudioClip shootSound; // Sonido al disparar
+    private AudioSource audioSource;
 
+
+    void OnEnable()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -48,6 +55,8 @@ public class BubbleShooting : MonoBehaviour
 
         rb.AddForce(direction.normalized * bulletForce, ForceMode2D.Impulse);  // Aplica la fuerza
         }
+
+        audioSource.PlayOneShot(shootSound);
     }
 
 }

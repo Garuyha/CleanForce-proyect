@@ -5343,6 +5343,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7193954122524294236, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
   m_PrefabInstance: {fileID: 1600548562}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &549394295 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4849887811550528878, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
+  m_PrefabInstance: {fileID: 1600548562}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 905e34043d760bf499d6dc2cf43acd9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &557807758
 GameObject:
   m_ObjectHideFlags: 0
@@ -8202,6 +8213,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd097b2e88577df40838772e585711b0, type: 3}
+--- !u!114 &1035249513 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4611222291462355602, guid: bd097b2e88577df40838772e585711b0, type: 3}
+  m_PrefabInstance: {fileID: 1035249512}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1035249514 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4300628753387790019, guid: bd097b2e88577df40838772e585711b0, type: 3}
+  m_PrefabInstance: {fileID: 1035249512}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1038568201
 GameObject:
   m_ObjectHideFlags: 0
@@ -11464,6 +11497,10 @@ PrefabInstance:
       propertyPath: bulletPool
       value: 
       objectReference: {fileID: 616669266}
+    - target: {fileID: 3538629103398567007, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
+      propertyPath: shootSound
+      value: 
+      objectReference: {fileID: 8300000, guid: bd16a60cd066c5c4eb5c0a63474e639f, type: 3}
     - target: {fileID: 4849887811550528878, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
       propertyPath: bulletPool
       value: 
@@ -14318,6 +14355,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5731201055213801351, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8283866546134850388, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: shotgunIcon
+      value: 
+      objectReference: {fileID: 1035249513}
+    - target: {fileID: 8283866546134850388, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: continuousIcon
+      value: 
+      objectReference: {fileID: 1035249514}
+    - target: {fileID: 8283866546134850388, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: shootingModeSwitcher
+      value: 
+      objectReference: {fileID: 549394295}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

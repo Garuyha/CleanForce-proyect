@@ -8,13 +8,17 @@ public class GameManager : MonoBehaviour
 
     public delegate void OnVictory(); 
     public static event OnVictory VictoryEvent;
+    private bool victoryTriggered = false;
 
     private float levelTime; 
     private float finalLevelTime = 0f; 
     private bool isLevelActive = false;
 
+    
+
     void OnEnable()
-    {
+    {   
+        
         levelTime = 0f;
         isLevelActive = true;
     }
@@ -26,7 +30,7 @@ public class GameManager : MonoBehaviour
             levelTime += Time.deltaTime; 
         }
 
-        if (nivelMugre == 0) 
+        if (nivelMugre == 0 && !victoryTriggered) 
         {
             Victoria();
         }
@@ -44,9 +48,9 @@ public class GameManager : MonoBehaviour
     }
 
     public void Victoria()
-    {
+    {   
+        victoryTriggered = true;
         StopLevelTime(); 
-        Time.timeScale = 0f; 
         VictoryEvent?.Invoke(); 
     }
 }
