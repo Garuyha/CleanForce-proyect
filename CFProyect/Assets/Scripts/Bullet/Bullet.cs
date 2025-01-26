@@ -29,24 +29,23 @@ public class Bullet : MonoBehaviour
         }
     }
 
-    
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-       
+
         if (collision.gameObject.CompareTag("Enemy"))
         {
             EnemigoPadre enemyHealth = collision.gameObject.GetComponent<EnemigoPadre>();
             if (enemyHealth != null)
             {
-                enemyHealth.DealDamage(damage);  
+                enemyHealth.DealDamage(damage);
             }
         }
-        else if (collision.gameObject.CompareTag("Blanco"))
+        else if (collision.gameObject.CompareTag("Mugre")||collision.gameObject.CompareTag("MugreBase"))
         {
             MugrePadre saludMugre = collision.gameObject.GetComponent<MugrePadre>();
             if(saludMugre != null)
             {
-                Debug.Log("A");
                 saludMugre.TakeDmg(dmgMugre);
             }
         }

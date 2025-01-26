@@ -9,6 +9,8 @@ TagManager:
   - Piso
   - Obstacle
   - Enemy
+  - MugreBase
+  - Mugre
   layers:
   - Default
   - TransparentFX
