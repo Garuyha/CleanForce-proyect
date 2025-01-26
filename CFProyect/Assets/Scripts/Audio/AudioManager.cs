@@ -15,23 +15,38 @@ public class AudioManager : MonoBehaviour
     public AudioClip win;
     public AudioClip buttom;
     public AudioClip[] counter; 
+    public AudioSource adSource;
 
     private void Awake()
     {
-        //musicSource.clip = background;
-        //musicSource.Play();
-        StartCoroutine("Contador");
+        musicSource.Stop();
+        musicSource.clip = background;
+        StartCoroutine(playAudioSequentially());
+        musicSource.Play();
     }
 
 
-// every 2 seconds perform the print()
-    IEnumerator Contador()
+    // every 2 seconds perform the print()
+    IEnumerator playAudioSequentially()
     {
+        yield return null;
+
+        //1.Loop through each AudioClip
         for (int i = 0; i < counter.Length; i++)
         {
-            SFXSource.Play();
-            yield return new WaitForSeconds(2f * Time.deltaTime);
+            //2.Assign current AudioClip to audiosource
             SFXSource.clip = counter[i];
+
+            //3.Play Audio
+            SFXSource.Play();
+
+            //4.Wait for it to finish playing
+            while (SFXSource.isPlaying)
+            {
+                yield return null;
+            }
+
+            //5. Go back to #2 and play the next audio in the adClips array
         }
     }
 }

@@ -7268,8 +7268,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8349e0954ee0057408e38b633dd7286f, type: 3}
   - {fileID: 8300000, guid: 9207bc401cb373f45925c37dc5994e12, type: 3}
   - {fileID: 8300000, guid: 48e6171a24260aa4c9ffa40ba588582b, type: 3}
-  - {fileID: 8300000, guid: 61622f980ffacc94594c458f48a6a2b2, type: 3}
   - {fileID: 8300000, guid: f4a6376a7b2d9774fa46d96837a6b2c4, type: 3}
+  adSource: {fileID: 0}
 --- !u!4 &899933834
 Transform:
   m_ObjectHideFlags: 0
@@ -10620,7 +10620,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -11318,7 +11318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1265297958822466075, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
       propertyPath: m_SortingLayer
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1265297958822466075, guid: d52eed7df1f2be14d8def2a0f9a393d1, type: 3}
       propertyPath: m_SortingLayerID
@@ -13365,18 +13365,6 @@ PrefabInstance:
     - target: {fileID: 5852175344358795707, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
       propertyPath: m_Name
       value: Main Camera (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7921603195960649386, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7921603195960649386, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7921603195960649386, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7921603195960649386, guid: 1450d620fc985c342ad0afd7fca3edff, type: 3}
       propertyPath: m_LocalPosition.x

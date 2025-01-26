@@ -47,7 +47,8 @@ public class EnemigoPadre : MonoBehaviour
                 mugreActual++;
                 spawn.Crear(mugre, enemigo, vivo);
             }
-        }
+        }else
+            target = sistemaDmg.DieMovment(agent, target);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
