@@ -7,7 +7,6 @@ public class SpawnMugre : MonoBehaviour
     {
         if (vivo)
         {
-            GameManager.nivelMugre++;
             Vector3 vectorPosicion = new Vector3(transform.position.x, transform.position.y, transform.position.z);
             Instantiate(mugre, vectorPosicion, Quaternion.identity);
             Debug.Log("El nivel de mugre actual es: " + GameManager.nivelMugre);
