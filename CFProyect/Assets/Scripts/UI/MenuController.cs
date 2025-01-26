@@ -10,7 +10,7 @@ public class MenuController : MonoBehaviour
 
     void Start()
     {
-        
+        Time.timeScale = 1f;
         playButton.onClick.AddListener(OnPlayButtonClicked);
         exitButton.onClick.AddListener(OnExitButtonClicked);
     }

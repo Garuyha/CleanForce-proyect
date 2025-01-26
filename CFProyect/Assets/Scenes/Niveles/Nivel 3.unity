@@ -6167,15 +6167,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6124570588053049068, guid: bd097b2e88577df40838772e585711b0, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8188888764644933562, guid: bd097b2e88577df40838772e585711b0, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8674944994366385815, guid: bd097b2e88577df40838772e585711b0, type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 8674944994366385815, guid: bd097b2e88577df40838772e585711b0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11440,6 +11444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countdownText: {fileID: 1298856873}
   overlayPanel: {fileID: 1298856874}
+  uiPanel: {fileID: 1897978454}
 --- !u!114 &1055496909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18944,6 +18949,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1897978454 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8674944994366385815, guid: bd097b2e88577df40838772e585711b0, type: 3}
+  m_PrefabInstance: {fileID: 613137820}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1907707606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 102848150865294043, guid: b3fce8cab25a2d545a40acb196ec3b2d, type: 3}
