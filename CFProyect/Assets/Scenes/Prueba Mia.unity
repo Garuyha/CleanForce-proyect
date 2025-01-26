@@ -594,18 +594,6 @@ PrefabInstance:
       value: CuadradoNegro
       objectReference: {fileID: 0}
     - target: {fileID: 7506306100375241620, guid: f8f9b44992c21dd448192a9ebc1e30e0, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.8203125
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506306100375241620, guid: f8f9b44992c21dd448192a9ebc1e30e0, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.658125
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506306100375241620, guid: f8f9b44992c21dd448192a9ebc1e30e0, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7506306100375241620, guid: f8f9b44992c21dd448192a9ebc1e30e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.01
       objectReference: {fileID: 0}
@@ -7799,22 +7787,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3627528074694166762, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
-      propertyPath: m_Speed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3627528074694166762, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
-      propertyPath: m_Height
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3627528074694166762, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
-      propertyPath: m_Radius
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3627528074694166762, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
-      propertyPath: m_WalkableMask
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4151638724765502536, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
       propertyPath: mugreManager
       value: 
@@ -7822,10 +7794,6 @@ PrefabInstance:
     - target: {fileID: 5330463553729987926, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 7829686649928483654, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8251154152426622360, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
       propertyPath: 'puntosPatrulla.Array.data[0]'
