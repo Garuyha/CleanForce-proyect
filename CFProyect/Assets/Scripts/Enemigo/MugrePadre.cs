@@ -4,6 +4,7 @@ public class MugrePadre: MonoBehaviour
 {
     [SerializeField] public int maxHealth = 40;
     [SerializeField] public int currentHealth;
+    [SerializeField] private bool creada=true;
 
     private void Awake()
     {
@@ -15,8 +16,9 @@ public class MugrePadre: MonoBehaviour
         currentHealth -= dmg;
         if (currentHealth <= 0)
         {
+            if(creada)
+                EnemigoPadre.mugreActual--;
             Destroy(gameObject);
-            Debug.Log("B");
         }
     }
 
