@@ -7815,6 +7815,10 @@ PrefabInstance:
       propertyPath: m_WalkableMask
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4151638724765502536, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
+      propertyPath: mugreManager
+      value: 
+      objectReference: {fileID: 711339402}
     - target: {fileID: 5330463553729987926, guid: d7f2e65458af52048b13b0ce487ac48e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90

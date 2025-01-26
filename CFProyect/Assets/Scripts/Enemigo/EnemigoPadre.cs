@@ -34,14 +34,17 @@ public class EnemigoPadre : MonoBehaviour
     private void Update()
     {
         movimiento.Moverse(agent, target);
-        movimiento.Moverse(sombra, target);
-        rotar.Rotar(sombra);
-        wait = wait + 1 * Time.deltaTime;
-        if (wait >= 0.5f && mugreActual < maximaMugre)
+        if (vivo)
         {
-            wait = 0f;
-            mugreActual++;
-            spawn.Crear(mugre, enemigo, vivo);
+            movimiento.Moverse(sombra, target);
+            rotar.Rotar(sombra);
+            wait = wait + 1 * Time.deltaTime;
+            if (wait >= 0.5f && mugreActual < maximaMugre)
+            {
+                wait = 0f;
+                mugreActual++;
+                spawn.Crear(mugre, enemigo, vivo);
+            }
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
