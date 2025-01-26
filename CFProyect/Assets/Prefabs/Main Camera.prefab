@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7921603195960649386}
   - component: {fileID: 817478454728009587}
-  - component: {fileID: 6729345697340632434}
   - component: {fileID: 6771445083957565214}
   - component: {fileID: 2016660006532547239}
   m_Layer: 0
@@ -70,7 +69,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -86,14 +85,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &6729345697340632434
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5852175344358795707}
-  m_Enabled: 1
 --- !u!114 &6771445083957565214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,5 +142,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  maxDistance: 5
+  maxDistance: 3
   followSpeed: 5

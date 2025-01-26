@@ -15,10 +15,4 @@ public class EnemyHealth : MonoBehaviour
     {
         return target = agent.transform;
     }
-
-    public SpriteRenderer DieSprite(SpriteRenderer spriteRenderer)
-    {
-        spriteRenderer.color = Color.green;
-        return spriteRenderer;
-    }
 }

@@ -57,11 +57,11 @@ TagManager:
   - name: Objetos
     uniqueID: 3397310701
     locked: 0
-  - name: Player
-    uniqueID: 1293526453
-    locked: 0
   - name: Enemigo
     uniqueID: 3760357089
+    locked: 0
+  - name: Player
+    uniqueID: 1293526453
     locked: 0
   - name: Burbuja
     uniqueID: 2141181503
