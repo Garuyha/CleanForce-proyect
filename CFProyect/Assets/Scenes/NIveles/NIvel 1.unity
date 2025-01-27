@@ -1348,6 +1348,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pantalla Pausa
       objectReference: {fileID: 0}
+    - target: {fileID: 4997088476446061496, guid: 54052081a72d77c46bc85edf9d54e9b9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5105116371864633591, guid: 54052081a72d77c46bc85edf9d54e9b9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -7172,10 +7176,6 @@ PrefabInstance:
     - target: {fileID: 4361940944393337857, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
       propertyPath: m_Name
       value: Pantalla Victoria
-      objectReference: {fileID: 0}
-    - target: {fileID: 4361940944393337857, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5970681122127302120, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
       propertyPath: m_Pivot.x
@@ -14384,27 +14384,27 @@ PrefabInstance:
     - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
       propertyPath: 'bestTimesTexts.Array.data[0]'
       value: 
-      objectReference: {fileID: 819816339}
+      objectReference: {fileID: 819816338}
     - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
       propertyPath: 'bestTimesTexts.Array.data[1]'
       value: 
-      objectReference: {fileID: 819816338}
+      objectReference: {fileID: 819816339}
     - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
       propertyPath: 'bestTimesTexts.Array.data[2]'
       value: 
-      objectReference: {fileID: 819816337}
+      objectReference: {fileID: 819816336}
     - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
       propertyPath: 'bestTimesTexts.Array.data[3]'
       value: 
-      objectReference: {fileID: 819816336}
+      objectReference: {fileID: 819816337}
     - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
       propertyPath: 'bestTimesTexts.Array.data[4]'
       value: 
-      objectReference: {fileID: 819816335}
+      objectReference: {fileID: 819816334}
     - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
       propertyPath: 'bestTimesTexts.Array.data[5]'
       value: 
-      objectReference: {fileID: 819816334}
+      objectReference: {fileID: 819816335}
     - target: {fileID: 1307017830826937451, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
       propertyPath: tiempo
       value: 

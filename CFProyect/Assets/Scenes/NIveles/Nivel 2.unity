@@ -5762,10 +5762,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5431389143219492522, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -3693765202203094804, guid: 10dc1d915294aee4e8e955d569c50dd0, type: 3}
     - target: {fileID: 5970681122127302120, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -5846,10 +5842,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6180844970751663642, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 5909509093825157906, guid: eaf52a31971aad54f9d0447818c3138e, type: 3}
     - target: {fileID: 6192120759936821142, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -5858,10 +5850,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ReturnToMainMenu
       objectReference: {fileID: 0}
-    - target: {fileID: 6269917700668257209, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 3442226954133872667, guid: c86c300b362d41c4baa15c86a0aa5262, type: 3}
     - target: {fileID: 7750778731956753281, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -12786,6 +12774,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 607342843483860155, guid: 54052081a72d77c46bc85edf9d54e9b9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1622066205}
     - target: {fileID: 1693715546777870511, guid: 54052081a72d77c46bc85edf9d54e9b9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -12873,6 +12865,10 @@ PrefabInstance:
     - target: {fileID: 4997088476446061496, guid: 54052081a72d77c46bc85edf9d54e9b9, type: 3}
       propertyPath: m_Name
       value: Pantalla Pausa
+      objectReference: {fileID: 0}
+    - target: {fileID: 4997088476446061496, guid: 54052081a72d77c46bc85edf9d54e9b9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5105116371864633591, guid: 54052081a72d77c46bc85edf9d54e9b9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

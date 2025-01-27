@@ -76,9 +76,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victoryPanel: {fileID: 0}
-  timeText: {fileID: 0}
-  timeTextFondo: {fileID: 0}
+  bestTimesTexts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentTimeText: {fileID: 0}
+  currentTimeTextFondo: {fileID: 0}
   victorySound: {fileID: 8300000, guid: 3238ae0100807b847805e357aa24cb3d, type: 3}
+  defaultTimes:
+  - 90
+  - 120
+  - 150
 --- !u!114 &4386143655981336288
 MonoBehaviour:
   m_ObjectHideFlags: 0

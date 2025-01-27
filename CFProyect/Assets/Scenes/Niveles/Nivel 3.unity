@@ -13246,33 +13246,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 597667081}
     - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
-      propertyPath: bestTimesTexts.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
       propertyPath: 'bestTimesTexts.Array.data[0]'
-      value: 
-      objectReference: {fileID: 227602903}
-    - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
-      propertyPath: 'bestTimesTexts.Array.data[1]'
       value: 
       objectReference: {fileID: 227602902}
     - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
-      propertyPath: 'bestTimesTexts.Array.data[2]'
+      propertyPath: 'bestTimesTexts.Array.data[1]'
       value: 
-      objectReference: {fileID: 227602901}
+      objectReference: {fileID: 227602903}
     - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
-      propertyPath: 'bestTimesTexts.Array.data[3]'
+      propertyPath: 'bestTimesTexts.Array.data[2]'
       value: 
       objectReference: {fileID: 227602900}
     - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: 'bestTimesTexts.Array.data[3]'
+      value: 
+      objectReference: {fileID: 227602901}
+    - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
       propertyPath: 'bestTimesTexts.Array.data[4]'
       value: 
-      objectReference: {fileID: 227602899}
+      objectReference: {fileID: 227602898}
     - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
       propertyPath: 'bestTimesTexts.Array.data[5]'
       value: 
-      objectReference: {fileID: 227602898}
+      objectReference: {fileID: 227602899}
     - target: {fileID: 1307017830826937451, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
       propertyPath: tiempo
       value: 
