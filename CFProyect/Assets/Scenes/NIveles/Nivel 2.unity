@@ -5762,6 +5762,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5431389143219492522, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3693765202203094804, guid: 10dc1d915294aee4e8e955d569c50dd0, type: 3}
     - target: {fileID: 5970681122127302120, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -5842,6 +5846,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6180844970751663642, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5909509093825157906, guid: eaf52a31971aad54f9d0447818c3138e, type: 3}
     - target: {fileID: 6192120759936821142, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -5850,11 +5858,85 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ReturnToMainMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 6269917700668257209, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3442226954133872667, guid: c86c300b362d41c4baa15c86a0aa5262, type: 3}
+    - target: {fileID: 7750778731956753281, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
+--- !u!114 &1074294205 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3156975867469797269, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
+  m_PrefabInstance: {fileID: 1074294204}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1074294206 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2218870858822097367, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
+  m_PrefabInstance: {fileID: 1074294204}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1074294207 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1402748085424418603, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
+  m_PrefabInstance: {fileID: 1074294204}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1074294208 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 286975741940270844, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
+  m_PrefabInstance: {fileID: 1074294204}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1074294209 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6698217253764553144, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
+  m_PrefabInstance: {fileID: 1074294204}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1074294210 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2128638825921634855, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
+  m_PrefabInstance: {fileID: 1074294204}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1075627606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9882,6 +9964,42 @@ PrefabInstance:
       propertyPath: timeTextFondo
       value: 
       objectReference: {fileID: 1102352315}
+    - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: currentTimeText
+      value: 
+      objectReference: {fileID: 904878056}
+    - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: currentTimeTextFondo
+      value: 
+      objectReference: {fileID: 1102352315}
+    - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: bestTimesTexts.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: 'bestTimesTexts.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1074294210}
+    - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: 'bestTimesTexts.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1074294209}
+    - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: 'bestTimesTexts.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1074294208}
+    - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: 'bestTimesTexts.Array.data[3]'
+      value: 
+      objectReference: {fileID: 1074294207}
+    - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: 'bestTimesTexts.Array.data[4]'
+      value: 
+      objectReference: {fileID: 1074294206}
+    - target: {fileID: 218728822377100459, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: 'bestTimesTexts.Array.data[5]'
+      value: 
+      objectReference: {fileID: 1074294205}
     - target: {fileID: 1307017830826937451, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
       propertyPath: tiempo
       value: 
