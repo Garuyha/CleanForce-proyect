@@ -13,6 +13,7 @@ public class VictoryScreenManager : MonoBehaviour
     public TextMeshProUGUI currentTimeTextFondo; // Texto de fondo para el tiempo del nivel actual
     public AudioClip victorySound; // Pista de audio para la victoria
     private AudioSource audioSource; // Fuente de audio
+    public BestTimesManager bestTimesManager;
 
     public List<float> defaultTimes = new List<float> { 90f, 120f, 150f }; // Tiempos predeterminados
     private GameManager gameManager; // Referencia al GameManager
@@ -53,7 +54,7 @@ public class VictoryScreenManager : MonoBehaviour
         currentTimeTextFondo.text = formattedCurrentTime;
 
         // Obtener los 3 mejores tiempos
-        List<float> bestTimes = gameManager.GetBestTimes();
+        List<float> bestTimes = bestTimesManager.GetBestTimes();
 
         // Si no hay suficientes registros, completar con el ranking por defecto
         if (bestTimes.Count < 3)
@@ -227,12 +228,6 @@ public class VictoryScreenManager : MonoBehaviour
     {
         Time.timeScale = 1f; // Restaurar el tiempo normal
         SceneManager.LoadScene("MainMenu");
-    }
-
-    public void ResetRanking()
-    {
-        gameManager.ResetBestTimes();
-        Debug.Log("Tiempos reiniciados!");
     }
 }
 

@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 4386143655981336288}
   - component: {fileID: 8283866546134850388}
   - component: {fileID: 5731201055213801351}
+  - component: {fileID: 3867069413618577400}
+  - component: {fileID: 2946789477244617291}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -86,6 +88,7 @@ MonoBehaviour:
   currentTimeText: {fileID: 0}
   currentTimeTextFondo: {fileID: 0}
   victorySound: {fileID: 8300000, guid: 3238ae0100807b847805e357aa24cb3d, type: 3}
+  bestTimesManager: {fileID: 2946789477244617291}
   defaultTimes:
   - 90
   - 120
@@ -217,3 +220,30 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3867069413618577400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560940607838280806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55468ee072c9a448a09172480a7d55f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  optionsPanel: {fileID: 0}
+  musicSlider: {fileID: 0}
+  sfxSlider: {fileID: 0}
+--- !u!114 &2946789477244617291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560940607838280806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 400d866e91b477b43bf116aa904c5b0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
