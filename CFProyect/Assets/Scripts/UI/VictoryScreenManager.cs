@@ -35,11 +35,13 @@ public class VictoryScreenManager : MonoBehaviour
     private void OnEnable()
     {
         GameManager.VictoryEvent += ShowVictoryPanel;
+        SceneManager.sceneUnloaded += OnSceneUnloaded;
     }
 
     private void OnDisable()
     {
         GameManager.VictoryEvent -= ShowVictoryPanel;
+        SceneManager.sceneUnloaded -= OnSceneUnloaded;
     }
 
     private void ShowVictoryPanel()
@@ -146,6 +148,10 @@ public class VictoryScreenManager : MonoBehaviour
 
     private void Update()
     {
+        if (this == null || gameObject == null)
+    {
+        return;
+    }
         // Solo aplicar el efecto arcoíris si el panel de victoria está activo
         if (victoryPanel.activeSelf && newBestTimeAchieved)
         {
@@ -228,6 +234,11 @@ public class VictoryScreenManager : MonoBehaviour
     {
         Time.timeScale = 1f; // Restaurar el tiempo normal
         SceneManager.LoadScene("MainMenu");
+    }
+
+     private void OnSceneUnloaded(Scene scene)
+    {
+        gameObject.SetActive(false);
     }
 }
 

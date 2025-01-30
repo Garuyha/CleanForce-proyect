@@ -1,12 +1,14 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class AudioManager : MonoBehaviour
 {
-    [Header("----------------- Fuente de audio -------------")]
-    [SerializeField] AudioSource musicSource;
-    [SerializeField] AudioSource SFXSource;
-    [Header("----------------- Audio ------------")]
+    [Header("----------------- Fuentes de Audio -------------")]
+    [SerializeField] private AudioSource musicSource;
+    [SerializeField] private AudioSource SFXSource;
+    
+    [Header("----------------- Audio -------------")]
     public AudioClip background;
     public AudioClip bublesLong;
     public AudioClip bublesShort;
@@ -17,36 +19,54 @@ public class AudioManager : MonoBehaviour
     public AudioClip[] counter; 
     public AudioSource adSource;
 
+    private List<AudioSource> allSFXSources = new List<AudioSource>(); // Lista con todos los SFX de la escena
+
     private void Awake()
     {
         musicSource.Stop();
         musicSource.clip = background;
         StartCoroutine(playAudioSequentially());
         musicSource.Play();
+
+        // Obtener automáticamente todos los AudioSource en la escena (excepto el de la música)
+        AudioSource[] sources = FindObjectsOfType<AudioSource>();
+        foreach (AudioSource source in sources)
+        {
+            if (source != musicSource) // Evitar agregar la música a la lista de SFX
+            {
+                allSFXSources.Add(source);
+            }
+        }
     }
 
-
-    // every 2 seconds perform the print()
+    // Reproducir una lista de sonidos secuencialmente
     IEnumerator playAudioSequentially()
     {
         yield return null;
-
-        //1.Loop through each AudioClip
         for (int i = 0; i < counter.Length; i++)
         {
-            //2.Assign current AudioClip to audiosource
             SFXSource.clip = counter[i];
-
-            //3.Play Audio
             SFXSource.Play();
-
-            //4.Wait for it to finish playing
             while (SFXSource.isPlaying)
             {
                 yield return null;
             }
+        }
+    }
 
-            //5. Go back to #2 and play the next audio in the adClips array
+    // Método para cambiar el volumen de la música
+    public void SetMusicVolume(float volume)
+    {
+        musicSource.volume = volume;
+    }
+
+    // Método para cambiar el volumen de los efectos de sonido (incluyendo los del Player)
+    public void SetSFXVolume(float volume)
+    {
+        foreach (AudioSource source in allSFXSources)
+        {
+            source.volume = volume;
         }
     }
 }
+

@@ -176,6 +176,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8f9b44992c21dd448192a9ebc1e30e0, type: 3}
+--- !u!1 &24738838 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3566393842475173773, guid: 7985a5f1ab79fa54087477dc7c1ae2fb, type: 3}
+  m_PrefabInstance: {fileID: 1659738581}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &48511435
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,7 +301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdownText: {fileID: 1366079768}
-  overlayPanel: {fileID: 1641369734}
+  overlayPanel: {fileID: 24738838}
   uiPanel: {fileID: 1141269906}
 --- !u!114 &66781339
 MonoBehaviour:
@@ -1260,6 +1265,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1937393621}
+    - target: {fileID: 456294250981882684, guid: 54052081a72d77c46bc85edf9d54e9b9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 456294250981882684, guid: 54052081a72d77c46bc85edf9d54e9b9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ResumeGame
@@ -12023,11 +12032,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 102848150865294043, guid: 6968bebd8b23021469b9c923b57ce09c, type: 3}
   m_PrefabInstance: {fileID: 1616450365}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1641369734 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4841842688335292907, guid: 7985a5f1ab79fa54087477dc7c1ae2fb, type: 3}
-  m_PrefabInstance: {fileID: 1659738581}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1659738581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14570,6 +14574,10 @@ PrefabInstance:
       propertyPath: 'bestTimesTexts.Array.data[5]'
       value: 
       objectReference: {fileID: 819816335}
+    - target: {fileID: 242827759290270639, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: timerText
+      value: 
+      objectReference: {fileID: 1316341503}
     - target: {fileID: 1307017830826937451, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
       propertyPath: tiempo
       value: 
@@ -14638,6 +14646,22 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6245867947841496505, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: uiPanel
+      value: 
+      objectReference: {fileID: 1141269906}
+    - target: {fileID: 6245867947841496505, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245867947841496505, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: overlayPanel
+      value: 
+      objectReference: {fileID: 24738838}
+    - target: {fileID: 6245867947841496505, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: countdownText
+      value: 
+      objectReference: {fileID: 1366079768}
     - target: {fileID: 8283866546134850388, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
       propertyPath: shotgunIcon
       value: 
@@ -14674,6 +14698,9 @@ SceneRoots:
   - {fileID: 846939368}
   - {fileID: 1600548562}
   - {fileID: 1978673851}
+  - {fileID: 4009157275390272460}
+  - {fileID: 66781342}
+  - {fileID: 899933834}
   - {fileID: 1055087997}
   - {fileID: 1258204134}
   - {fileID: 1726206256}
@@ -14681,9 +14708,6 @@ SceneRoots:
   - {fileID: 463098277}
   - {fileID: 315564533}
   - {fileID: 336548153}
-  - {fileID: 66781342}
-  - {fileID: 1659738581}
-  - {fileID: 1035249512}
   - {fileID: 1523894477}
   - {fileID: 940060100}
   - {fileID: 1557794706}
@@ -14691,11 +14715,11 @@ SceneRoots:
   - {fileID: 89979990}
   - {fileID: 633880521}
   - {fileID: 186587845}
-  - {fileID: 4009157275390272460}
   - {fileID: 357250933}
   - {fileID: 1508784606}
-  - {fileID: 899933834}
-  - {fileID: 819816333}
   - {fileID: 1865356658}
+  - {fileID: 1035249512}
+  - {fileID: 1659738581}
+  - {fileID: 819816333}
   - {fileID: 211058127}
   - {fileID: 1340010472}

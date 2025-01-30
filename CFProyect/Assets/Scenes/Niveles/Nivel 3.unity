@@ -4053,6 +4053,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &427549980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3566393842475173773, guid: 7985a5f1ab79fa54087477dc7c1ae2fb, type: 3}
+  m_PrefabInstance: {fileID: 1298856872}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &447674106 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 102848150865294043, guid: b3fce8cab25a2d545a40acb196ec3b2d, type: 3}
@@ -11697,7 +11702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdownText: {fileID: 1298856873}
-  overlayPanel: {fileID: 1298856874}
+  overlayPanel: {fileID: 427549980}
   uiPanel: {fileID: 1897978454}
 --- !u!114 &1055496909
 MonoBehaviour:
@@ -13844,11 +13849,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1298856874 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4841842688335292907, guid: 7985a5f1ab79fa54087477dc7c1ae2fb, type: 3}
-  m_PrefabInstance: {fileID: 1298856872}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1299256913
 PrefabInstance:
   m_ObjectHideFlags: 0

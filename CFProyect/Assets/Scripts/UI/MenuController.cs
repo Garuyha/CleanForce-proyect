@@ -5,24 +5,26 @@ using UnityEngine.UI;
 public class MenuController : MonoBehaviour
 {
     
-    public Button playButton;
-    public Button exitButton;
+
 
     void Start()
     {
         Time.timeScale = 1f;
-        playButton.onClick.AddListener(OnPlayButtonClicked);
-        exitButton.onClick.AddListener(OnExitButtonClicked);
+
     }
 
     
-    void OnPlayButtonClicked()
+    public void LoadFirstLevel()
     {
-        SceneManager.LoadScene("Nivel 1");
+        Time.timeScale = 1f;
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 1;
+        SceneManager.LoadScene(nextSceneIndex);
+
     }
 
     
-    void OnExitButtonClicked()
+    public void ExitGame()
     {
         
         Application.Quit();

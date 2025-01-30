@@ -984,6 +984,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &259281952 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6466800096299964463, guid: ffc96f1ed6442cb4c8e813e26f557814, type: 3}
+  m_PrefabInstance: {fileID: 1934027779}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &265386594
 GameObject:
   m_ObjectHideFlags: 0
@@ -4726,6 +4737,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1852385956852824027, guid: f8f9b44992c21dd448192a9ebc1e30e0, type: 3}
   m_PrefabInstance: {fileID: 868700482}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &868895815 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8284548831873974462, guid: ffc96f1ed6442cb4c8e813e26f557814, type: 3}
+  m_PrefabInstance: {fileID: 1934027779}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &893257939 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4361940944393337857, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
@@ -5148,7 +5164,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 7985a5f1ab79fa54087477dc7c1ae2fb, type: 3}
 --- !u!1 &964923834 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 4841842688335292907, guid: 7985a5f1ab79fa54087477dc7c1ae2fb, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3566393842475173773, guid: 7985a5f1ab79fa54087477dc7c1ae2fb, type: 3}
   m_PrefabInstance: {fileID: 964923833}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &964923835 stripped
@@ -9988,6 +10004,10 @@ PrefabInstance:
       propertyPath: 'bestTimesTexts.Array.data[5]'
       value: 
       objectReference: {fileID: 1074294205}
+    - target: {fileID: 242827759290270639, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: timerText
+      value: 
+      objectReference: {fileID: 420459368}
     - target: {fileID: 1307017830826937451, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
       propertyPath: tiempo
       value: 
@@ -10052,6 +10072,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6245867947841496505, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: uiPanel
+      value: 
+      objectReference: {fileID: 420459369}
+    - target: {fileID: 6245867947841496505, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: overlayPanel
+      value: 
+      objectReference: {fileID: 868895815}
+    - target: {fileID: 6245867947841496505, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
+      propertyPath: countdownText
+      value: 
+      objectReference: {fileID: 259281952}
     - target: {fileID: 8283866546134850388, guid: 9536a609d2df35e43a3b1942649b94c5, type: 3}
       propertyPath: shotgunIcon
       value: 
@@ -11822,6 +11854,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8284548831873974462, guid: ffc96f1ed6442cb4c8e813e26f557814, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 739421011903438899, guid: ffc96f1ed6442cb4c8e813e26f557814, type: 3}
@@ -13066,6 +13102,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1622066206}
+    - target: {fileID: 5458092110563536617, guid: 54052081a72d77c46bc85edf9d54e9b9, type: 3}
+      propertyPath: m_Color.a
+      value: 0.39215687
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
