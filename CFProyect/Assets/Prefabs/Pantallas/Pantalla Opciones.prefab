@@ -878,7 +878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 111324d5bc154cd478ecbf3ce4973879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverScale: {x: 1.2, y: 1.2, z: 1}
+  hoverScale: {x: 2.2, y: 2.2, z: 1}
   animationSpeed: 0.2
 --- !u!1 &1898522321868042406
 GameObject:
@@ -1744,10 +1744,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 7627435062361629160}
   m_HandleRect: {fileID: 4040078146910547538}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2490,10 +2490,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 8080134374758237617}
   m_HandleRect: {fileID: 3504499425600878790}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

@@ -7,6 +7,7 @@ public class PauseMenuManager : MonoBehaviour
     private bool isPaused = false;
     private bool canPause = false; 
     private bool isVictoryScreenActive = false; 
+    [SerializeField] private AudioClip pauseSFX;
 
     void Start()
     {
@@ -37,6 +38,7 @@ public class PauseMenuManager : MonoBehaviour
     {
         isPaused = true;
         Time.timeScale = 0f; 
+        SoundFXManager.instance.PlaySoundFXClip(pauseSFX, transform, 1f);
         pauseMenuPanel.SetActive(true); 
     }
 

@@ -11,8 +11,7 @@ public class VictoryScreenManager : MonoBehaviour
     public TextMeshProUGUI[] bestTimesTexts; // Arreglo de TextMeshPro para los mejores tiempos (pares: texto principal y fondo)
     public TextMeshProUGUI currentTimeText; // Texto para mostrar el tiempo del nivel actual (Texto principal)
     public TextMeshProUGUI currentTimeTextFondo; // Texto de fondo para el tiempo del nivel actual
-    public AudioClip victorySound; // Pista de audio para la victoria
-    private AudioSource audioSource; // Fuente de audio
+    [SerializeField] private AudioClip winSFX;
     public BestTimesManager bestTimesManager;
 
     public List<float> defaultTimes = new List<float> { 90f, 120f, 150f }; // Tiempos predeterminados
@@ -21,15 +20,7 @@ public class VictoryScreenManager : MonoBehaviour
 
     void Start()
     {
-        // Obtener referencias
-        audioSource = GetComponent<AudioSource>();
-        gameManager = FindObjectOfType<GameManager>();
-
-        // Verificar AudioSource
-        if (audioSource == null)
-        {
-            Debug.LogError("No se encontró un AudioSource en el GameObject. Por favor, agrégalo.");
-        }
+        gameManager = FindObjectOfType<GameManager>();      
     }
 
     private void OnEnable()
@@ -99,10 +90,7 @@ public class VictoryScreenManager : MonoBehaviour
         }
 
         // Reproducir la música de victoria una vez
-        if (audioSource != null && victorySound != null)
-        {
-            audioSource.PlayOneShot(victorySound);
-        }
+        SoundFXManager.instance.PlaySoundFXClip(winSFX, transform, 1f);
     }
 
     private string FormatTime(float time)

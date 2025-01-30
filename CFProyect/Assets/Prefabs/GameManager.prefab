@@ -87,7 +87,7 @@ MonoBehaviour:
   - {fileID: 0}
   currentTimeText: {fileID: 0}
   currentTimeTextFondo: {fileID: 0}
-  victorySound: {fileID: 8300000, guid: 3238ae0100807b847805e357aa24cb3d, type: 3}
+  winSFX: {fileID: 8300000, guid: 3238ae0100807b847805e357aa24cb3d, type: 3}
   bestTimesManager: {fileID: 2946789477244617291}
   defaultTimes:
   - 90
@@ -106,6 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuPanel: {fileID: 0}
+  pauseSFX: {fileID: 8300000, guid: 50b0ad30826c04a4aad6599949130855, type: 3}
 --- !u!114 &8283866546134850388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,9 +233,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b55468ee072c9a448a09172480a7d55f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsPanel: {fileID: 0}
-  musicSlider: {fileID: 0}
-  sfxSlider: {fileID: 0}
+  optionsPanel: {fileID: 1155388783695661974, guid: ffc96f1ed6442cb4c8e813e26f557814, type: 3}
+  sliderMusic: {fileID: 0}
+  sliderSFX: {fileID: 0}
 --- !u!114 &2946789477244617291
 MonoBehaviour:
   m_ObjectHideFlags: 0

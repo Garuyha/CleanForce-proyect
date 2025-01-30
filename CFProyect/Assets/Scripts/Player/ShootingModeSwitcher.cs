@@ -11,9 +11,8 @@ public class ShootingModeSwitcher : MonoBehaviour
     // Valores de lifetime para cada modo
     public float continuousDamping = 3f;
     public float shotgunDamping = 8f;
+    [SerializeField] private AudioClip buttonSFX;
 
-    public AudioClip buttonSound; // Sonido al cambiar de modo
-    private AudioSource audioSource;
 
     // Definición de los modos de disparo
     public enum ShootingMode
@@ -29,11 +28,6 @@ public class ShootingModeSwitcher : MonoBehaviour
     // Propiedad pública para acceder al modo actual
     public ShootingMode CurrentMode { get; private set; } = ShootingMode.Continuous;
 
-    void OnEnable()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
-
     void Start()
     {
         ActivateContinuousShooting();
@@ -46,17 +40,14 @@ public class ShootingModeSwitcher : MonoBehaviour
             if (isShotgunActive)
             {
                 ActivateContinuousShooting();
+                SoundFXManager.instance.PlaySoundFXClip(buttonSFX, transform, 1f);
             }
             else
             {
                 ActivateShotgunShooting();
+                SoundFXManager.instance.PlaySoundFXClip(buttonSFX, transform, 1f);
             }
 
-            // Reproducir sonido al cambiar de modo
-            if (audioSource != null && buttonSound != null)
-            {
-                audioSource.PlayOneShot(buttonSound);
-            }
         }
     }
 

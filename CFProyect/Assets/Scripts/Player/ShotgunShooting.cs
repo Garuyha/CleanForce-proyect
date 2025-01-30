@@ -12,14 +12,10 @@ public class ShotgunShooting : MonoBehaviour
 
     private float nextShootTime = 0f; // Control del tiempo entre disparos
 
-    public AudioClip buttonSound; // Sonido al disparar
-    private AudioSource audioSource;
+    [SerializeField] private AudioClip shootSFX;
 
 
-    void OnEnable()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
+
     void Update()
     {
         if (Input.GetButton("Fire1")) // Mientras se mantenga presionado
@@ -62,7 +58,7 @@ public class ShotgunShooting : MonoBehaviour
                 rb.AddForce(direction * bulletForce, ForceMode2D.Impulse); // Disparar la bala
             }
         }
-        audioSource.PlayOneShot(buttonSound);
+        SoundFXManager.instance.PlaySoundFXClip(shootSFX, transform, 1f);
         
     }
 }
