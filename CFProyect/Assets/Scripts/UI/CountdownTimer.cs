@@ -7,8 +7,7 @@ public class CountdownTimer : MonoBehaviour
     public TextMeshProUGUI countdownText; 
     public GameObject overlayPanel;    
     private float countdownTime = 3f;    
-    private int countSFX;
-    private bool countdownActive = true; 
+    private int countSFX;    
     public GameObject uiPanel;
     [SerializeField] private AudioClip[] counterSFX;
 
@@ -40,6 +39,5 @@ public class CountdownTimer : MonoBehaviour
         countdownText.text = "";
         uiPanel.SetActive(true);
         Time.timeScale = 1f; 
-        countdownActive = false;
     }
 }

@@ -26,16 +26,22 @@ public class BestTimesManager : MonoBehaviour
     }
 
     public void ResetBestTimes()
+{
+    int totalLevels = SceneManager.sceneCountInBuildSettings;
+
+    for (int levelIndex = 0; levelIndex < totalLevels; levelIndex++)
     {
-        string levelKey = $"BestTimes_Level_{GetCurrentLevelIndex()}";
+        string levelKey = $"BestTimes_Level_{levelIndex}";
 
         for (int i = 0; i < 3; i++)
         {
             PlayerPrefs.DeleteKey($"{levelKey}_{i}");
         }
-
-        PlayerPrefs.Save();
     }
+
+    PlayerPrefs.Save();
+}
+
 
     private List<float> LoadBestTimes(string levelKey)
     {

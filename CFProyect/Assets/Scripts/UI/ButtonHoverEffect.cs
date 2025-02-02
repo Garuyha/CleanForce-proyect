@@ -3,29 +3,31 @@ using UnityEngine.EventSystems;
 
 public class ButtonHoverEffect : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public Vector3 hoverScale = new Vector3(1.2f, 1.2f, 1f); 
-    public float animationSpeed = 0.2f; 
+    public float scaleFactor = 1.2f; // 1.2 significa un aumento del 20%
+    public float animationSpeed = 0.2f;
 
     private Vector3 originalScale;
-    private bool isHovered = false;
+    private Vector3 targetScale;
+
 
     void Start()
     {
-        originalScale = transform.localScale; 
+        originalScale = transform.localScale;
+        targetScale = originalScale * scaleFactor; // Calcula el tamaño aumentado automáticamente
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        isHovered = true;
-        StopAllCoroutines(); 
-        StartCoroutine(ScaleTo(hoverScale)); 
+
+        StopAllCoroutines();
+        StartCoroutine(ScaleTo(targetScale));
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        isHovered = false;
+
         StopAllCoroutines();
-        StartCoroutine(ScaleTo(originalScale)); 
+        StartCoroutine(ScaleTo(originalScale));
     }
 
     private System.Collections.IEnumerator ScaleTo(Vector3 targetScale)
@@ -36,10 +38,11 @@ public class ButtonHoverEffect : MonoBehaviour, IPointerEnterHandler, IPointerEx
         while (elapsedTime < animationSpeed)
         {
             transform.localScale = Vector3.Lerp(startScale, targetScale, elapsedTime / animationSpeed);
-            elapsedTime += Time.deltaTime;
+            elapsedTime += Time.unscaledDeltaTime; // Usamos unscaledDeltaTime para que funcione con timeScale = 0
             yield return null;
         }
 
         transform.localScale = targetScale;
     }
 }
+

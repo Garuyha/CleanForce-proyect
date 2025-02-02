@@ -45,16 +45,28 @@ public class ObjectPooler : MonoBehaviour
         return obj;
     }
 
-    // Método para configurar LinearDamping en cada bala de la pool
     public void SetLinearDampingForAllBullets(float newLinearDamping)
+{
+    if (pool == null || pool.Count == 0)
     {
-        foreach (GameObject obj in pool)
+        Debug.LogWarning("La pool no está inicializada o está vacía.");
+        return;
+    }
+
+    foreach (GameObject obj in pool)
+    {
+        if (obj == null) continue;
+
+        Bullet bullet = obj.GetComponent<Bullet>();
+        if (bullet != null)
         {
-            Bullet bullet = obj.GetComponent<Bullet>();
-            if (bullet != null)
-            {
-                bullet.SetLinearDamping(newLinearDamping);
-            }
+            bullet.SetLinearDamping(newLinearDamping);
+        }
+        else
+        {
+            Debug.LogWarning($"El objeto {obj.name} en la pool no tiene un componente Bullet.");
         }
     }
+}
+
 }

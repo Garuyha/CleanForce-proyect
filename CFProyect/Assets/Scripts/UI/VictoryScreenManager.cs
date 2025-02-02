@@ -20,7 +20,7 @@ public class VictoryScreenManager : MonoBehaviour
 
     void Start()
     {
-        gameManager = FindObjectOfType<GameManager>();      
+        gameManager = UnityEngine.Object.FindFirstObjectByType<GameManager>();     
     }
 
     private void OnEnable()
@@ -37,10 +37,10 @@ public class VictoryScreenManager : MonoBehaviour
 
     private void ShowVictoryPanel()
     {
-        Time.timeScale = 0f; // Pausar el juego
+        Time.timeScale = 0f; 
         victoryPanel.SetActive(true);
 
-        // Mostrar el tiempo del nivel actual
+        
         float currentLevelTime = gameManager.GetLevelTime();
         string formattedCurrentTime = FormatTime(currentLevelTime);
         currentTimeText.text = formattedCurrentTime;
@@ -89,7 +89,7 @@ public class VictoryScreenManager : MonoBehaviour
             }
         }
 
-        // Reproducir la música de victoria una vez
+
         SoundFXManager.instance.PlaySoundFXClip(winSFX, transform, 1f);
     }
 
@@ -104,18 +104,18 @@ public class VictoryScreenManager : MonoBehaviour
 
     private void ApplyRainbowEffectToText(TextMeshProUGUI textMesh)
     {
-        // Llamamos a la corutina para aplicar el efecto arcoíris
+     
         StartCoroutine(RainbowEffectCoroutine(textMesh));
     }
 
     private IEnumerator RainbowEffectCoroutine(TextMeshProUGUI textMesh)
 {
-    // Mientras la pantalla de victoria esté activa, actualizar el gradiente de forma continua
+    
     while (victoryPanel.activeSelf)
     {
-        var rainbowTime = Mathf.PingPong(Time.unscaledTime, 1f); // Oscilar entre 0 y 1 para el gradiente
+        var rainbowTime = Mathf.PingPong(Time.unscaledTime, 1f); 
 
-        // Crear un gradiente arcoíris con la transición de colores
+        
         var gradient = new VertexGradient(
             Color.HSVToRGB(rainbowTime, 1f, 1f),
             Color.HSVToRGB((rainbowTime + 0.33f) % 1f, 1f, 1f),
@@ -123,13 +123,13 @@ public class VictoryScreenManager : MonoBehaviour
             Color.HSVToRGB((rainbowTime + 1f) % 1f, 1f, 1f)
         );
 
-        // Aplicar el gradiente arcoíris solo al texto principal (no al fondo)
+        
         textMesh.colorGradient = gradient;
 
         yield return null; // Esperar al siguiente frame
     }
 
-    // Limpiar el gradiente cuando se cambia de escena (usamos un gradiente con colores transparentes)
+    
     textMesh.colorGradient = new VertexGradient(Color.clear, Color.clear, Color.clear, Color.clear);
 }
 
@@ -140,15 +140,15 @@ public class VictoryScreenManager : MonoBehaviour
     {
         return;
     }
-        // Solo aplicar el efecto arcoíris si el panel de victoria está activo
+        
         if (victoryPanel.activeSelf && newBestTimeAchieved)
         {
             int newBestTimeIndex = GetNewBestTimeIndex();
 
-            // Verificar que el índice obtenido es válido
+            
             if (newBestTimeIndex >= 0 && newBestTimeIndex < bestTimesTexts.Length)
             {
-                // Continuar el efecto arcoíris si el nuevo mejor tiempo fue alcanzado
+                
                 ApplyRainbowEffectToText(bestTimesTexts[newBestTimeIndex]);
             }
         }
