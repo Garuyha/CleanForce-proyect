@@ -7,6 +7,7 @@ using System;
 
 public class VictoryScreenManager : MonoBehaviour
 {
+    public static VictoryScreenManager Instance;
     public GameObject victoryPanel; // Panel de victoria
     public TextMeshProUGUI[] bestTimesTexts; // Arreglo de TextMeshPro para los mejores tiempos (pares: texto principal y fondo)
     public TextMeshProUGUI currentTimeText; // Texto para mostrar el tiempo del nivel actual (Texto principal)
@@ -20,6 +21,7 @@ public class VictoryScreenManager : MonoBehaviour
 
     void Start()
     {
+        Instance = this;
         gameManager = UnityEngine.Object.FindFirstObjectByType<GameManager>();     
     }
 
@@ -35,7 +37,7 @@ public class VictoryScreenManager : MonoBehaviour
         SceneManager.sceneUnloaded -= OnSceneUnloaded;
     }
 
-    private void ShowVictoryPanel()
+    public void ShowVictoryPanel()
     {
         Time.timeScale = 0f; 
         victoryPanel.SetActive(true);

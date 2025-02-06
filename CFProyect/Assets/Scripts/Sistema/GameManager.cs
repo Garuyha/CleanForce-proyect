@@ -53,7 +53,8 @@ public class GameManager : MonoBehaviour
         victoryTriggered = true;
         StopLevelTime();
         BestTimesManager.Instance.SaveBestTimes(finalLevelTime);
-        VictoryEvent?.Invoke();
+        //VictoryEvent?.Invoke();
+        VictoryScreenManager.Instance.ShowVictoryPanel();
     }
 
 

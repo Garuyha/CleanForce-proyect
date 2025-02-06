@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      escopeta switchers_0: 2705760820557857001
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
