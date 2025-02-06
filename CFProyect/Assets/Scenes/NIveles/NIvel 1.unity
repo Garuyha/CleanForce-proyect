@@ -7168,6 +7168,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pantalla Victoria
       objectReference: {fileID: 0}
+    - target: {fileID: 4361940944393337857, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5970681122127302120, guid: 75d310520d595ef4f8fc2eaf72f51367, type: 3}
       propertyPath: m_Pivot.x
       value: 0
