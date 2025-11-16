@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using TMPro;
 
 
 public class GameManager : MonoBehaviour
 {
     public static int nivelMugre = 0;
     [SerializeField] private ObtenerPuntaje puntaje;
+    [SerializeField] private TMP_Text textPuntaje;
 
     public delegate void OnVictory();
     public static event OnVictory VictoryEvent;
@@ -26,6 +28,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        textPuntaje.text = "Mugre: "+nivelMugre.ToString();
         if (isLevelActive)
         {
             levelTime += Time.deltaTime;
@@ -53,7 +56,7 @@ public class GameManager : MonoBehaviour
         victoryTriggered = true;
         StopLevelTime();
         BestTimesManager.Instance.SaveBestTimes(finalLevelTime);
-        //VictoryEvent?.Invoke();
+        VictoryEvent?.Invoke();
         VictoryScreenManager.Instance.ShowVictoryPanel();
     }
 
